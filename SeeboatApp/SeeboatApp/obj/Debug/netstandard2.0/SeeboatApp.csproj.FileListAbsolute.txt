@@ -1,0 +1,17 @@
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\bin\Debug\netstandard2.0\SeeboatApp.deps.json
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\bin\Debug\netstandard2.0\SeeboatApp.dll
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\SeeboatApp.csprojAssemblyReference.cache
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\SeeboatApp.csproj.CoreCompileInputs.cache
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\SeeboatApp.AssemblyInfoInputs.cache
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\SeeboatApp.AssemblyInfo.cs
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\XamlC.stamp
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\Graphs.xaml.g.cs
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\bin\Debug\netstandard2.0\SeeboatApp.pdb
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\SeeboatApp.dll
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\SeeboatApp.pdb
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\bin\Debug\netstandard2.0\Mono.Android.dll
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\bin\Debug\netstandard2.0\Mono.Android.pdb
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\bin\Debug\netstandard2.0\Mono.Android.xml
+c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\SeeboatApp.csproj.CopyComplete
