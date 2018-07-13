@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MapApp"
+             x:Class="MapApp.MainPage">
+
+
+
+    <Button x:Name="GetMap" Text="Click me to display map!!" TextColor="MediumSeaGreen" FontAttributes="Bold" Clicked="GetMap_Clicked" VerticalOptions="Center" HeightRequest="100"/>
+
+
+</ContentPage>
