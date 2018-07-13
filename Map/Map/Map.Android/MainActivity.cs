@@ -9,6 +9,7 @@ using Android.OS;
 
 using Plugin.CurrentActivity;
 using Map.Droid;
+using Xamarin.Forms;
 
 namespace MapApp.Droid
 {

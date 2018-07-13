@@ -11,3 +11,16 @@ c:\users\administrator\source\repos\Map\Map\Map\obj\Debug\netstandard2.0\MapApp.
 c:\users\administrator\source\repos\Map\Map\Map\obj\Debug\netstandard2.0\MapApp.csprojAssemblyReference.cache
 c:\users\administrator\source\repos\Map\Map\Map\obj\Debug\netstandard2.0\Graphs.xaml.g.cs
 c:\users\administrator\source\repos\Map\Map\Map\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0\MapApp.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0\MapApp.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0\MapApp.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\bin\Debug\netstandard2.0\MapApp.deps.json
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\bin\Debug\netstandard2.0\MapApp.dll
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\bin\Debug\netstandard2.0\MapApp.pdb
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0\MapApp.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0\Graphs.xaml.g.cs
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0\MapApp.dll
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0\MapApp.pdb

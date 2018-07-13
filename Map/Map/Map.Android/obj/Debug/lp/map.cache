@@ -1,8 +1,14 @@
 FormsViewGroup
 MapApp
+Microcharts
+Microcharts.Droid
+Microcharts.Forms
 Plugin.CurrentActivity
 Plugin.Geolocator
 Plugin.Permissions
+SkiaSharp
+SkiaSharp.Views.Android
+SkiaSharp.Views.Forms
 System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
@@ -34,10 +40,4 @@ Xamarin.GooglePlayServices.Basement
 Xamarin.GooglePlayServices.Maps
 Xamarin.GooglePlayServices.Tasks
 netstandard
-Microcharts
-Microcharts.Droid
-Microcharts.Forms
-SkiaSharp
-SkiaSharp.Views.Android
-SkiaSharp.Views.Forms
 System.Collections

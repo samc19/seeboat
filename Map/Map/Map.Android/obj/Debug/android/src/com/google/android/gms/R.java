@@ -3964,6 +3964,7 @@ containing a value of this type.
         public static int common_open_on_phone=0x7f09000e;
         public static int common_signin_button_text=0x7f09000f;
         public static int common_signin_button_text_long=0x7f090010;
+        public static int library_name=0x7f09004d;
         public static int mr_button_content_description=0x7f090011;
         public static int mr_cast_button_connected=0x7f090012;
         public static int mr_cast_button_connecting=0x7f090013;
