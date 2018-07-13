@@ -25,12 +25,6 @@ namespace SeeboatApp
                
 
         }
-
-
-        private static void OnTimedEvent(Object source, ElapsedEventArgs e)
-        {
-
-        }
         
         private void timer1_Tick(Object source, System.Timers.ElapsedEventArgs e)
         {
@@ -39,6 +33,7 @@ namespace SeeboatApp
                 
                 TimeLeft--;
                 System.Diagnostics.Debug.WriteLine(TimeLeft);
+                //Will call BoatData.AddData()
                 
             }
            else

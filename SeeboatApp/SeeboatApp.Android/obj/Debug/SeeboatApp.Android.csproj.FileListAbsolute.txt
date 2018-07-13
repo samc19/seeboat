@@ -99,7 +99,6 @@ c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\obj\De
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\android\assets\Xamarin.Forms.Core.pdb
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.pdb
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\bin\Debug\SeeboatApp.Android.dll
-c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\linksrc\SeeboatApp.pdb
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\linksrc\SeeboatApp.Android.dll.mdb
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
