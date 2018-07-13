@@ -1,4 +1,5 @@
 ﻿using Android.OS;
+using FileReader;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,8 +13,9 @@ namespace SeeboatApp
         int TimeLeft = 10;
         Timer Timer1 = new Timer();
         Label timerLabel;
-        
-        
+        Dictionary<string, BoatData> boats;
+
+
 
         public StopWatch(Xamarin.Forms.Label label)
         {
@@ -21,26 +23,27 @@ namespace SeeboatApp
             Timer1.Start();
             Timer1.Elapsed += timer1_Tick;
             timerLabel = label;
-            
-               
+            boats = new Dictionary<string, BoatData>(6);
+            boats.Add("1", new BoatData());
+
 
         }
-        
+
         private void timer1_Tick(Object source, System.Timers.ElapsedEventArgs e)
         {
-           if(TimeLeft>0)
-            {
-                
-                TimeLeft--;
-                System.Diagnostics.Debug.WriteLine(TimeLeft);
-                //Will call BoatData.AddData()
-                
-            }
-           else
-            {
-                Timer1.Stop();
-            }
-        }
+
+
+            FileParser reader = new FileParser("26,23.09,45.80,5,34,59,2,67.9,34.7,4.9,45.34");
+            boats["1"].AddData(reader.FileToArray());
+            //Will call BoatData.AddData()
             
+
+
+
+
+
+
+
+        } 
     }
 }

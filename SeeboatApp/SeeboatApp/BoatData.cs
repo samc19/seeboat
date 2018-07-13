@@ -1,20 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using FileReader;
 using Microcharts;
+using Xamarin.Forms.Maps;
 
 namespace SeeboatApp
 {
     class BoatData
     {
-        private List<Entry> temps;
-        private List<Entry> pHs;
-        private List<Entry> conds;
-        private List<Entry> turbs;
+        
+        public List<Entry> temps { get;  }
+        public List<Entry> pHs { get; }
+        public List<Entry> conds { get;  }
+        public List<Entry> turbs { get;  }
+        public Position GPS { get; set; }
 
 
         public BoatData()
         {
+            
             temps = new List<Entry> {
                 new Entry(200)
                 {
@@ -66,9 +71,11 @@ namespace SeeboatApp
                     ValueLabel = "400"
                 }};
 
+            GPS = new Position(42.361598, -71.081279);
+
         }
 
-        public bool AddData(int[] data)
+        public bool AddData(double[] data)
         {
             if (data[7] != 0)
             {
@@ -81,20 +88,21 @@ namespace SeeboatApp
                     j++;
                 }
                 UpdateLists(entries);
+                GPS = new Position(data[1], data[2]);
                 return true;
             }
             return false;
         }
 
-        private String ConvertTime(int[] data)
+        private String ConvertTime(double[] data)
         {
             string time = data[3] + data[4] + data[5] + "";
             return time;
         }
 
-        private Entry MakeEntry(int point, String time)
+        private Entry MakeEntry(double point, String time)
         {
-            Entry dataPoint = new Entry(point)
+            Entry dataPoint = new Entry((float)point)
             {
                 Label = time,
                 ValueLabel = point + ""
@@ -111,25 +119,6 @@ namespace SeeboatApp
             turbs.Add(data[3]);
         }
 
-        public List<Entry> GetTemps()
-        {
-            return temps;
-        }
-
-        public List<Entry> GetConds()
-        {
-            return conds;
-        }
-
-        public List<Entry> GetTurbs()
-        {
-            return turbs;
-        }
-
-        public List<Entry> GetPHs()
-        {
-            return pHs;
-        }
-
+       
     }
 }

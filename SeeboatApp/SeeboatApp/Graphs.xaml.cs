@@ -26,24 +26,24 @@ namespace SeeboatApp
             InitializeComponent();
             Chart1.Chart = new LineChart
             {
-                Entries = source.GetTemps(),
+                Entries = source.temps,
                 LineMode = LineMode.Straight
 
             };
             Chart2.Chart = new LineChart
             {
-                Entries = source.GetConds(),
+                Entries = source.conds,
                 LineMode = LineMode.Straight
             };
             Chart3.Chart = new LineChart
             {
-                Entries = source.GetPHs(),
+                Entries = source.pHs,
                 LineMode = LineMode.Straight
 
             };
             Chart4.Chart = new LineChart
             {
-                Entries = source.GetTurbs(),
+                Entries = source.turbs,
                 LineMode = LineMode.Straight
             };
         }

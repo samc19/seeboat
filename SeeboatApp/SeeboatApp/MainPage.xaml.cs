@@ -13,6 +13,8 @@ namespace SeeboatApp
 		public MainPage()
 		{
 			InitializeComponent();
+            FileParser file = new FileParser("FileParser.cs");
+            double[] data = file.FileToArray();
 		}
 
         async void OnClick(object sender, EventArgs e)
