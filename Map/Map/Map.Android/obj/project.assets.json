@@ -1310,11 +1310,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\administrator\\source\\repos\\Map\\Map\\Map.Android\\MapApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\seeboat\\Map\\Map\\Map.Android\\MapApp.Android.csproj",
       "projectName": "MapApp.Android",
-      "projectPath": "c:\\users\\administrator\\source\\repos\\Map\\Map\\Map.Android\\MapApp.Android.csproj",
+      "projectPath": "C:\\Users\\Administrator\\source\\repos\\seeboat\\Map\\Map\\Map.Android\\MapApp.Android.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\administrator\\source\\repos\\Map\\Map\\Map.Android\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\source\\repos\\seeboat\\Map\\Map\\Map.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1331,8 +1331,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "c:\\users\\administrator\\source\\repos\\Map\\Map\\Map\\MapApp.csproj": {
-              "projectPath": "c:\\users\\administrator\\source\\repos\\Map\\Map\\Map\\MapApp.csproj"
+            "C:\\Users\\Administrator\\source\\repos\\seeboat\\Map\\Map\\Map\\MapApp.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\source\\repos\\seeboat\\Map\\Map\\Map\\MapApp.csproj"
             }
           }
         }

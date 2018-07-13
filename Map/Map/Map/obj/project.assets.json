@@ -634,11 +634,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\administrator\\source\\repos\\Map\\Map\\Map\\MapApp.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\seeboat\\Map\\Map\\Map\\MapApp.csproj",
       "projectName": "MapApp",
-      "projectPath": "c:\\users\\administrator\\source\\repos\\Map\\Map\\Map\\MapApp.csproj",
+      "projectPath": "C:\\Users\\Administrator\\source\\repos\\seeboat\\Map\\Map\\Map\\MapApp.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\administrator\\source\\repos\\Map\\Map\\Map\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\source\\repos\\seeboat\\Map\\Map\\Map\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
