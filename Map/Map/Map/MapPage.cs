@@ -12,16 +12,15 @@ namespace MapApp
 {
     public class MapPage : ContentPage
     {
-        Plugin.Geolocator.Abstractions.Position position;
+        Map map;
 
         public MapPage()
-        {
-            GetMyLocation();
+        { 
 
             //creates map
-            var map = new Map(
+            map = new Map(
             MapSpan.FromCenterAndRadius(
-                    new Position(position.Latitude, position.Longitude), Distance.FromMiles(0.1)))
+                    new Position(0, 0), Distance.FromMiles(0.1)))
             {
                 IsShowingUser = true,
                 HeightRequest = 100,
@@ -29,8 +28,10 @@ namespace MapApp
                 VerticalOptions = LayoutOptions.FillAndExpand
             };
 
-            //creates pin on map
-            var pin = new Pin()
+            MoveToMyLocation();
+
+            //creates pin on map\
+            /*var pin = new Pin()
             {
                 Position = new Position(position.Latitude + 0.001, position.Longitude + 0.001),
                 Label = "Click this text to see charts!",
@@ -38,6 +39,7 @@ namespace MapApp
             };
             map.Pins.Add(pin);
             pin.Clicked += GoToChart;
+            */
             //places map onto content page
 
             var stack = new StackLayout { Spacing = 0 };
@@ -45,10 +47,11 @@ namespace MapApp
             Content = stack;
         }
 
-        async void GetMyLocation()
+        async void MoveToMyLocation()
         {
             var locator = CrossGeolocator.Current;
-            position = await locator.GetPositionAsync(TimeSpan.FromSeconds(1));
+            var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(0.001));
+            map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(position.Latitude, position.Longitude), Distance.FromMiles(0.1)));
         }
 
         //navigates to new page with graphs on them
