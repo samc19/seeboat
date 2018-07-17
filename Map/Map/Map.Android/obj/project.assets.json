@@ -1291,7 +1291,14 @@
     "MonoAndroid,Version=v8.1": [
       "MapApp >= 1.0.0",
       "Xam.Plugin.Geolocator >= 4.5.0.6",
+      "Xamarin.Android.Support.Animated.Vector.Drawable >= 27.0.2.1",
+      "Xamarin.Android.Support.Compat >= 27.0.2.1",
+      "Xamarin.Android.Support.Core.UI >= 27.0.2.1",
+      "Xamarin.Android.Support.Core.Utils >= 27.0.2.1",
       "Xamarin.Android.Support.Design >= 27.0.2.1",
+      "Xamarin.Android.Support.Fragment >= 27.0.2.1",
+      "Xamarin.Android.Support.Media.Compat >= 27.0.2.1",
+      "Xamarin.Android.Support.Vector.Drawable >= 27.0.2.1",
       "Xamarin.Android.Support.v4 >= 27.0.2.1",
       "Xamarin.Android.Support.v7.AppCompat >= 27.0.2.1",
       "Xamarin.Android.Support.v7.CardView >= 27.0.2.1",
@@ -1345,7 +1352,35 @@
             "target": "Package",
             "version": "[4.5.0.6, )"
           },
+          "Xamarin.Android.Support.Animated.Vector.Drawable": {
+            "target": "Package",
+            "version": "[27.0.2.1, )"
+          },
+          "Xamarin.Android.Support.Compat": {
+            "target": "Package",
+            "version": "[27.0.2.1, )"
+          },
+          "Xamarin.Android.Support.Core.UI": {
+            "target": "Package",
+            "version": "[27.0.2.1, )"
+          },
+          "Xamarin.Android.Support.Core.Utils": {
+            "target": "Package",
+            "version": "[27.0.2.1, )"
+          },
           "Xamarin.Android.Support.Design": {
+            "target": "Package",
+            "version": "[27.0.2.1, )"
+          },
+          "Xamarin.Android.Support.Fragment": {
+            "target": "Package",
+            "version": "[27.0.2.1, )"
+          },
+          "Xamarin.Android.Support.Media.Compat": {
+            "target": "Package",
+            "version": "[27.0.2.1, )"
+          },
+          "Xamarin.Android.Support.Vector.Drawable": {
             "target": "Package",
             "version": "[27.0.2.1, )"
           },

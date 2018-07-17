@@ -23,3 +23,6 @@ C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0\MapApp.dll
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0\MapApp.pdb
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0\MapApp.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0\MapPage.xaml.g.cs
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map\obj\Debug\netstandard2.0\About.xaml.g.cs

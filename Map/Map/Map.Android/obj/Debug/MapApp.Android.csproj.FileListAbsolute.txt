@@ -194,6 +194,7 @@ C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\bin\Debug\Xamari
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\linksrc\Map.Android.dll.mdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\drawable\logo.png
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\bin\Debug\Map.Android.dll.mdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\android\assets\Map.Android.dll.mdb
@@ -219,6 +220,7 @@ C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\androi
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.pdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\bin\Debug\Map.Android.dll
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\linksrc\MapApp.pdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\linksrc\Map.Android.dll.mdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

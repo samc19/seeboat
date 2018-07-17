@@ -2,19 +2,23 @@
 using System.Collections.Generic;
 using System.Text;
 using Microcharts;
+using Plugin.Geolocator.Abstractions;
 
 namespace MapApp
 {
-    class BoatData
+    public class BoatData
     {
-        private List<Entry> temps;
-        private List<Entry> pHs;
-        private List<Entry> conds;
-        private List<Entry> turbs;
+
+        public List<Entry> temps { get; }
+        public List<Entry> pHs { get; }
+        public List<Entry> conds { get; }
+        public List<Entry> turbs { get; }
+        public Position GPS { get; set; }
 
 
         public BoatData()
         {
+
             temps = new List<Entry> {
                 new Entry(200)
                 {
@@ -66,9 +70,11 @@ namespace MapApp
                     ValueLabel = "400"
                 }};
 
+            GPS = new Position(42.361598, -71.081279);
+
         }
 
-        public bool AddData(int[] data)
+        public bool AddData(double[] data)
         {
             if (data[7] != 0)
             {
@@ -81,20 +87,22 @@ namespace MapApp
                     j++;
                 }
                 UpdateLists(entries);
+                GPS = new Position(data[1], data[2]);
+                System.Diagnostics.Debug.WriteLine("Update finished");
                 return true;
             }
             return false;
         }
 
-        private String ConvertTime(int[] data)
+        private String ConvertTime(double[] data)
         {
             string time = data[3] + data[4] + data[5] + "";
             return time;
         }
 
-        private Entry MakeEntry(int point, String time)
+        private Entry MakeEntry(double point, String time)
         {
-            Entry dataPoint = new Entry(point)
+            Entry dataPoint = new Entry((float)point)
             {
                 Label = time,
                 ValueLabel = point + ""
@@ -109,27 +117,15 @@ namespace MapApp
             conds.Add(data[1]);
             pHs.Add(data[2]);
             turbs.Add(data[3]);
+            if(temps.Count > 15)
+            {
+                temps.RemoveAt(0);
+                conds.RemoveAt(0);
+                pHs.RemoveAt(0);
+                turbs.RemoveAt(0);
+            }
         }
 
-        public List<Entry> GetTemps()
-        {
-            return temps;
-        }
-
-        public List<Entry> GetConds()
-        {
-            return conds;
-        }
-
-        public List<Entry> GetTurbs()
-        {
-            return turbs;
-        }
-
-        public List<Entry> GetPHs()
-        {
-            return pHs;
-        }
 
     }
 }

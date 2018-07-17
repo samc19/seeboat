@@ -4,9 +4,12 @@
              xmlns:local="clr-namespace:MapApp"
              x:Class="MapApp.MainPage">
 
-
-
-    <Button x:Name="GetMap" Text="Click me to display map!!" TextColor="MediumSeaGreen" FontAttributes="Bold" Clicked="GetMap_Clicked" VerticalOptions="Center" HeightRequest="100"/>
-
-
+    <StackLayout BackgroundColor="DarkBlue">
+        <Label x:Name="Title" Text="See Boat" TextColor="DarkSeaGreen" Font="Trade Gothic" FontSize="90" HorizontalOptions="Center" TranslationY="100"/>
+        <Button x:Name="GetMap" Text="Go to Map" Font="Trade Gothic" TextColor="WhiteSmoke" Clicked="GetMap_Clicked" HorizontalOptions="Center" WidthRequest="200" BackgroundColor="DarkSeaGreen" TranslationY="300"/>
+    </StackLayout>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="AboutItem" Text="About" Order="Secondary" Clicked="AboutItem_Clicked"/>
+        <ToolbarItem x:Name="MapItem" Text="Map" Order="Secondary" Clicked="MapItem_Clicked"/>
+    </ContentPage.ToolbarItems>
 </ContentPage>

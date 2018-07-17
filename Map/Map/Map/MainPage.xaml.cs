@@ -14,6 +14,7 @@ namespace MapApp
         public MainPage()
         {
             InitializeComponent();
+
         }
 
         //button is clicked to create map
@@ -26,6 +27,15 @@ namespace MapApp
         async void GenerateMapAroundLocation()
         {
             await Navigation.PushAsync(new MapPage());
+        }
+        async void AboutItem_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new About());
+        }
+
+        private void MapItem_Clicked(object sender, EventArgs e)
+        {
+            GenerateMapAroundLocation();
         }
     }
 	}

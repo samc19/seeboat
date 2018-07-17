@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>7/12/2018 3:56:05 PM</xs:documentation>
+    <xs:documentation>7/16/2018 3:03:58 PM</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -83,7 +83,12 @@
       <xs:element ref="TextureView" />
       <xs:element ref="ViewStub" />
       <xs:element ref="fragment" />
+      <xs:element ref="Microcharts.Droid.ChartView" />
       <xs:element ref="com.xamarin.forms.platform.android.FormsViewGroup" />
+      <xs:element ref="SkiaSharp.Views.Android.SKSurfaceView" />
+      <xs:element ref="SkiaSharp.Views.Android.SKCanvasView" />
+      <xs:element ref="SkiaSharp.Views.Forms.SKGLViewRenderer" />
+      <xs:element ref="SkiaSharp.Views.Forms.SKCanvasViewRenderer" />
       <xs:element ref="com.google.android.gms.maps.StreetViewPanoramaView" />
       <xs:element ref="com.google.android.gms.maps.MapView" />
       <xs:element ref="com.google.android.gms.common.SignInButton" />
@@ -1475,12 +1480,62 @@
     <xs:attribute ref="android:layout_height" />
     <xs:attribute ref="android:style" />
   </xs:complexType>
+  <xs:element name="Microcharts.Droid.ChartView" type="Microcharts.Droid.ChartView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Microcharts.Droid.ChartView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Microcharts.Droid.ChartView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:element name="com.xamarin.forms.platform.android.FormsViewGroup" type="com.xamarin.forms.platform.android.FormsViewGroup">
     <xs:annotation>
       <xs:documentation>Runtime Type: Xamarin.Forms.Platform.Android.FormsViewGroup</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="com.xamarin.forms.platform.android.FormsViewGroup">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SkiaSharp.Views.Android.SKSurfaceView" type="SkiaSharp.Views.Android.SKSurfaceView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: SkiaSharp.Views.Android.SKSurfaceView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="SkiaSharp.Views.Android.SKSurfaceView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="SurfaceView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SkiaSharp.Views.Android.SKCanvasView" type="SkiaSharp.Views.Android.SKCanvasView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: SkiaSharp.Views.Android.SKCanvasView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="SkiaSharp.Views.Android.SKCanvasView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SkiaSharp.Views.Forms.SKGLViewRenderer" type="SkiaSharp.Views.Forms.SKGLViewRenderer">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: SkiaSharp.Views.Forms.SKGLViewRenderer</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="SkiaSharp.Views.Forms.SKGLViewRenderer">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SkiaSharp.Views.Forms.SKCanvasViewRenderer" type="SkiaSharp.Views.Forms.SKCanvasViewRenderer">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: SkiaSharp.Views.Forms.SKCanvasViewRenderer</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="SkiaSharp.Views.Forms.SKCanvasViewRenderer">
     <xs:complexContent mixed="false">
       <xs:extension base="ViewGroup" />
     </xs:complexContent>
