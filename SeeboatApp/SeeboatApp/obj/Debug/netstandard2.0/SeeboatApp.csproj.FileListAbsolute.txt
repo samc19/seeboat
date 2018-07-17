@@ -14,4 +14,3 @@ c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\bin\Debug\nets
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\bin\Debug\netstandard2.0\Mono.Android.xml
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\SeeboatApp.csproj.CopyComplete
 C:\Users\Administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\SeeboatApp.csprojAssemblyReference.cache
-C:\Users\Administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\XamlC.stamp

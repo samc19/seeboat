@@ -1,4 +1,5 @@
-﻿using Android.OS;
+﻿
+using FileReader;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,24 +9,21 @@ using Xamarin.Forms;
 
 namespace SeeboatApp
 {
-	public partial class MainPage : ContentPage
-	{
-		public MainPage()
-		{
-			InitializeComponent();
-            FileParser file = new FileParser("FileParser.cs");
-            double[] data = file.FileToArray();
-		}
+    public partial class MainPage : ContentPage
+    {
+        Retriever dataPuller;
+        public MainPage()
+        {
+            InitializeComponent();
+            dataPuller = new Retriever();
+        }
 
         async void OnClick(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Graphs());
+            await Navigation.PushAsync(new Graphs(1, dataPuller));
 
         }
 
-        public void StartTimerClicked(object sender, EventArgs e)
-        {
-            StopWatch counter = new StopWatch(countdown);
-        }
+
     }
 }

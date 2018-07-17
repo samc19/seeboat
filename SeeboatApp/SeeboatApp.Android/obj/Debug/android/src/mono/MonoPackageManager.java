@@ -107,10 +107,16 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "SeeboatApp.Android.dll" comes first in this list. */
 		"SeeboatApp.Android.dll",
+		"crypto.dll",
 		"FormsViewGroup.dll",
+		"GoogleApi.dll",
 		"Microcharts.dll",
 		"Microcharts.Droid.dll",
 		"Microcharts.Forms.dll",
+		"Newtonsoft.Json.dll",
+		"Plugin.CurrentActivity.dll",
+		"Plugin.Geolocator.dll",
+		"Plugin.Permissions.dll",
 		"SeeboatApp.dll",
 		"SkiaSharp.dll",
 		"SkiaSharp.Views.Android.dll",

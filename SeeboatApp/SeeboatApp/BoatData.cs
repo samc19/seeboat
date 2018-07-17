@@ -7,13 +7,13 @@ using Xamarin.Forms.Maps;
 
 namespace SeeboatApp
 {
-    class BoatData
+    public class BoatData
     {
         
-        public List<Entry> temps { get;  }
+        public List<Entry> temps { get; }
         public List<Entry> pHs { get; }
-        public List<Entry> conds { get;  }
-        public List<Entry> turbs { get;  }
+        public List<Entry> conds { get; }
+        public List<Entry> turbs { get; }
         public Position GPS { get; set; }
 
 
