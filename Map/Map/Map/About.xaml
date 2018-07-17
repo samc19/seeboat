@@ -3,10 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MapApp.About">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="DarkBlue" Padding="20">
+            <Label x:Name="Title"
+                   Text="About"
+                   TextColor="WhiteSmoke"
+                   Scale="3"
+                   Font="Trade Gothic"
+                   TranslationY="50"
+                   HorizontalOptions="Center" />
+            <Label x:Name="Info1"
+                   Text="See Boat helps us understand our water..."
+                   TextColor="WhiteSmoke"
+                   Font="Trade Gothic"
+                   TranslationY="125"
+                   HorizontalOptions="Start" />
+            <Label x:Name="Info2"
+                   Text="See Boat is a project of the MIT Media Lab and Northeastern University..."
+                   TextColor="WhiteSmoke"
+                   Font="Trade Gothic"
+                   TranslationY="175"
+                   HorizontalOptions="Start" />
+            <Label x:Name="Info3"
+                   Text="The See Boat app was made by Robert Henning, Laura Perovich, and Microsoft New England Research and Development Center interns..."
+                   TextColor="WhiteSmoke"
+                   Font="Trade Gothic"
+                   TranslationY="225"
+                   HorizontalOptions="Start" />
+            <Label x:Name="Contact"
+                   Text="Questions? Contact us..."
+                   TextColor="WhiteSmoke"
+                   Font="Trade Gothic"
+                   TranslationY="275"
+                   HorizontalOptions="Start" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -17,6 +17,16 @@ namespace MapApp
         public MapPage()
         {
             dataPuller = new Retriever();
+
+            //adds toolbaritems
+            var AboutItem = new ToolbarItem
+            {
+                Text = "About",
+                Order = ToolbarItemOrder.Secondary
+            };
+            this.ToolbarItems.Add(AboutItem);
+            AboutItem.Clicked += AboutItem_Activated;
+
             //creates map
             map = new Map(
             MapSpan.FromCenterAndRadius(
@@ -45,18 +55,7 @@ namespace MapApp
             var stack = new StackLayout { Spacing = 0 };
             stack.Children.Add(map);
             Content = stack;
-
-            //adds toolbaritems
-            var AboutItem = new ToolbarItem
-            {
-                Text = "About",
-                Order = ToolbarItemOrder.Secondary
-            };
-
-            this.ToolbarItems.Add(AboutItem);
-           
-
-           
+   
         }
 
         async void MoveToMyLocation()

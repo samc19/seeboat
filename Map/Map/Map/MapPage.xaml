@@ -4,6 +4,6 @@
              x:Class="MapApp.MapPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="AboutItem" Activated="AboutItem_Activated"  Order="Secondary"/>
+        <ToolbarItem Text="AboutItem" Order="Secondary" Clicked="AboutItem_Activated"/>
     </ContentPage.ToolbarItems>
 </ContentPage>
