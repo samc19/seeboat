@@ -16,6 +16,7 @@ namespace MapApp
         Retriever dataPuller;
         public MapPage()
         {
+            Title = "Seeboat";
             dataPuller = new Retriever();
 
             //adds toolbaritems

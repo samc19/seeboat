@@ -109,6 +109,7 @@ c:\users\administrator\source\repos\Map\Map\Map.Android\obj\Debug\android\assets
 c:\users\administrator\source\repos\Map\Map\Map.Android\obj\Debug\android\assets\System.Xml.pdb
 c:\users\administrator\source\repos\Map\Map\Map.Android\obj\Debug\android\assets\Xamarin.Forms.Core.pdb
 c:\users\administrator\source\repos\Map\Map\Map.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.pdb
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\android\bin\com.companyname.apk
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\bin\Debug\Map.Android.dll
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\bin\Debug\Map.Android.pdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\bin\Debug\com.companyname.apk
@@ -130,7 +131,6 @@ C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\XamlC.
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\MapApp.Android.csproj.CopyComplete
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\Map.Android.dll
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\Map.Android.pdb
-C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\android\bin\com.companyname.apk
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\layout\tabbar.xml
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\layout\toolbar.xml
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\values\styles.xml
@@ -147,6 +147,7 @@ C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\mi
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\mipmap-xxhdpi\launcher_foreground.png
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\mipmap-xxxhdpi\icon.png
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\mipmap-xxxhdpi\launcher_foreground.png
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\drawable\logo.png
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\R.cs.flag
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\R.txt
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\uploadflags.txt
@@ -194,7 +195,6 @@ C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\bin\Debug\Xamari
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\linksrc\Map.Android.dll.mdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
-C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\drawable\logo.png
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\bin\Debug\Map.Android.dll.mdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\android\assets\Map.Android.dll.mdb
