@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SeeboatApp"
              x:Class="SeeboatApp.MainPage">
-    <StackLayout>
+
     <Button x:Name="startButton" Text="Start" BackgroundColor="Aqua" VerticalOptions="Center" HeightRequest="100" Clicked="OnClick"/>
-    <Button x:Name="startTimer" Text="Time" Clicked="StartTimerClicked"/>
-    <Label x:Name="countdown" IsEnabled="True"/>
-    </StackLayout>
+
+
+
 </ContentPage>
