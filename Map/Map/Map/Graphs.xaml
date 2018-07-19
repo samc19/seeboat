@@ -3,7 +3,8 @@
              xmlns:local="clr-namespace:MapApp"
              xmlns:forms="clr-namespace:Microcharts;assembly=Microcharts"
              xmlns:forms1="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
-             x:Class="MapApp.Graphs">
+             x:Class="MapApp.Graphs"
+             Title="SeeBoat">
     <ScrollView>
         <StackLayout>
             <Button x:Name="Refresh" Text="Get New Data" Clicked="Refresh_Clicked"/>

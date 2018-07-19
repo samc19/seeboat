@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MapApp.About"
-             Title="Seeboat">
+             Title="SeeBoat">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#085DAD" Padding="20">
             <Label x:Name="Title"

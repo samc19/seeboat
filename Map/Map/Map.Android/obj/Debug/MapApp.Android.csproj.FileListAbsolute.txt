@@ -147,7 +147,6 @@ C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\mi
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\mipmap-xxhdpi\launcher_foreground.png
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\mipmap-xxxhdpi\icon.png
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\mipmap-xxxhdpi\launcher_foreground.png
-C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\drawable\logo.png
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\R.cs.flag
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\R.txt
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\uploadflags.txt
@@ -219,8 +218,12 @@ C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\androi
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\android\assets\System.Xml.pdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.pdb
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\drawable\seeboaticon.png
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\drawable-hdpi\seeboaticon.png
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\drawable-xhdpi\seeboaticon.png
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\drawable-xxhdpi\seeboaticon.png
+C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\res\drawable-xxxhdpi\seeboaticon.png
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\bin\Debug\Map.Android.dll
-C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\linksrc\MapApp.pdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\linksrc\Map.Android.dll.mdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
 C:\Users\Administrator\source\repos\seeboat\Map\Map\Map.Android\obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

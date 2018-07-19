@@ -3708,9 +3708,6 @@ namespace Map.Droid
 			// aapt resource value: 0x7F090104
 			public const int ic_vol_type_tv_light = 2131296516;
 			
-			// aapt resource value: 0x7F010002
-			public const int Logo = 2130771970;
-			
 			// aapt resource value: 0x7F090105
 			public const int mr_button_connected_dark = 2131296517;
 			
@@ -3944,6 +3941,9 @@ namespace Map.Droid
 			
 			// aapt resource value: 0x1
 			public const int quantum_ic_volume_up_white_36 = 1;
+			
+			// aapt resource value: 0x7F010002
+			public const int SeeBoatIcon = 2130771970;
 			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
