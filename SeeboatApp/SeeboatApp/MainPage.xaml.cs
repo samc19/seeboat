@@ -1,29 +1,42 @@
-﻿
-using FileReader;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.Maps;
+using Plugin.Geolocator;
 
 namespace SeeboatApp
 {
     public partial class MainPage : ContentPage
     {
-        Retriever dataPuller;
         public MainPage()
         {
             InitializeComponent();
-            dataPuller = new Retriever();
+
         }
 
-        async void OnClick(object sender, EventArgs e)
+        //button is clicked to create map
+        private void GetMap_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Graphs(1, dataPuller));
-
+            GenerateMapAroundLocation();
         }
 
+        //creates new MapPage
+        async void GenerateMapAroundLocation()
+        {
+            await Navigation.PushAsync(new MapPage());
+        }
+        async void AboutItem_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new About());
+        }
 
+        private void MapItem_Clicked(object sender, EventArgs e)
+        {
+            GenerateMapAroundLocation();
+        }
     }
 }
+

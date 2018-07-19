@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.SeeboatApp">
-  <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="27" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+  <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <uses-feature android:name="android.hardware.location.gps" />
   <uses-feature android:name="android.hardware.location.network" />
   <application android:label="SeeboatApp.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBXYkZsahEGAuvePGcbTQTs3WGpWvLiSAM" />
     <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="SeeboatApp" android:theme="@style/MainTheme" android:name="md512e11fa5656b264cb2144ecb6719a02e.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -16,16 +21,15 @@
       </intent-filter>
     </activity>
     <receiver android:enabled="true" android:exported="false" android:name="md51558244f76c53b6aeda52c8a337f2c37.PowerSaveModeBroadcastReceiver" />
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.companyname.SeeboatApp.mono.MonoRuntimeProvider.__mono_init__" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.companyname.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
         <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.com.companyname.SeeboatApp" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.companyname" />
       </intent-filter>
     </receiver>
     <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
   </application>
-  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 </manifest>

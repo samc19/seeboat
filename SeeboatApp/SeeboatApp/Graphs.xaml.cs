@@ -7,7 +7,6 @@ using Xamarin.Forms;
 using Microcharts;
 using Entry = Microcharts.Entry;
 using SkiaSharp;
-using SeeboatApp;
 using System.Timers;
 
 namespace SeeboatApp
@@ -15,7 +14,7 @@ namespace SeeboatApp
 {
     public partial class Graphs : ContentPage
     {
-        BoatData source = new BoatData();
+        BoatData source;
         int BoatID;
         Retriever dataSource;
 
@@ -27,23 +26,18 @@ namespace SeeboatApp
         }
 
 
+
+
         private void UpdateSource()
         {
-            //dataSource.Update();
-            source = dataSource.GetData("1");
-            /*double[] random = new double[11];
-            Random rnd = new Random();
-            for(int i=0; i<11; i++)
-            {
-                random[i] = rnd.Next(100);
-            }
-            source.AddData(random);*/
+            //dataSource.UpdateTest();
+            source = dataSource.GetData(1);
+
         }
 
 
         public void Update(object sender, ElapsedEventArgs e)
         {
-            //dataSource.Update();
             UpdateSource();
             UpdateGraphs();
         }
@@ -89,8 +83,28 @@ namespace SeeboatApp
                 LineMode = LineMode.Straight
 
             };
-            MaxValue1.Text = "Max Value:" + Chart1.Chart.MaxValue.ToString();
+
 
         }
+
+        async void Chart1_Touch(object sender, SkiaSharp.Views.Forms.SKTouchEventArgs e)
+        {
+            await Navigation.PushAsync(new GraphFocus(dataSource, BoatID, Label1.Text ));
+        }
+
+        async void Chart2_Touch(object sender, SkiaSharp.Views.Forms.SKTouchEventArgs e)
+        {
+            await Navigation.PushAsync(new GraphFocus(dataSource, BoatID, Label2.Text ));
+        }
+
+        async void Chart3_Touch(object sender, SkiaSharp.Views.Forms.SKTouchEventArgs e)
+        {
+            await Navigation.PushAsync(new GraphFocus(dataSource, BoatID, Label3.Text ));
+        }
+
+        async void Chart4_Touch(object sender, SkiaSharp.Views.Forms.SKTouchEventArgs e)
+        {
+            await Navigation.PushAsync(new GraphFocus(dataSource, BoatID, Label4.Text ));
+        }                                                                                                              
     }
 }

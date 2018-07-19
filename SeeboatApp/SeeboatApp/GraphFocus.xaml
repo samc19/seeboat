@@ -1,0 +1,17 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SeeboatApp"
+             xmlns:forms="clr-namespace:Microcharts;assembly=Microcharts"
+             xmlns:forms1="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="SeeboatApp.GraphFocus">
+    <StackLayout>
+        <Button x:Name="Refresh" Text="Get New Data" Clicked="Refresh_Clicked"/>
+        <Label x:Name="TitleDisplay" Text="" HorizontalTextAlignment="Center" Margin="5" Font="Roboto" FontSize="Large"/>
+        <forms1:ChartView x:Name="ChartFocus" HeightRequest="150" />
+
+        <Label x:Name="Max" HorizontalTextAlignment="Start" Font="Roboto" FontSize="18" HorizontalOptions="Start" Margin="5"/>
+        <Label x:Name="Average" HorizontalTextAlignment="End" HorizontalOptions="End" Font="Roboto" FontSize="18" Margin="5"/>
+
+    </StackLayout>
+
+</ContentPage>

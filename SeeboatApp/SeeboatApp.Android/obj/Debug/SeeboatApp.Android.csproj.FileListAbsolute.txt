@@ -1,7 +1,5 @@
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\bin\Debug\SeeboatApp.Android.dll
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\bin\Debug\SeeboatApp.Android.pdb
-c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\bin\Debug\com.companyname.SeeboatApp.apk
-c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\bin\Debug\com.companyname.SeeboatApp-Signed.apk
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\bin\Debug\SeeboatApp.dll
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\bin\Debug\SeeboatApp.pdb
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\SeeboatApp.Android.csprojAssemblyReference.cache
@@ -10,7 +8,6 @@ c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\obj\De
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\SeeboatApp.Android.csproj.CopyComplete
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\SeeboatApp.Android.dll
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\SeeboatApp.Android.pdb
-c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\android\bin\com.companyname.SeeboatApp.apk
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\res\layout\tabbar.xml
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\res\layout\toolbar.xml
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\res\values\styles.xml
@@ -110,7 +107,11 @@ C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp.Android\obj\De
 C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\android\assets\System.Xml.pdb
 C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.pdb
+C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp.Android\bin\Debug\com.companyname.apk
+C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp.Android\bin\Debug\com.companyname-Signed.apk
+C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\android\bin\com.companyname.apk
 C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp.Android\bin\Debug\SeeboatApp.Android.dll
+C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\linksrc\SeeboatApp.pdb
 C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\linksrc\SeeboatApp.Android.dll.mdb
 C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
 C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp.Android\obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

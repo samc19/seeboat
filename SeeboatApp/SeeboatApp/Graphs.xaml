@@ -4,20 +4,34 @@
              xmlns:forms="clr-namespace:Microcharts;assembly=Microcharts"
              xmlns:forms1="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
              x:Class="SeeboatApp.Graphs">
-    <ScrollView>
-        <StackLayout>
-            <Button x:Name="Refresh" Text="Get New Data" Clicked="Refresh_Clicked"/>
-            <Label Text="Temperature" HorizontalTextAlignment="Center" Margin="5" Font="Roboto" FontSize="Small"/>
-            <forms1:ChartView x:Name="Chart1" HeightRequest="150" />
-            <Label x:Name="MaxValue1"  TranslationX="100"  Text=""/>
-            <Label Text="Conductivity" HorizontalTextAlignment="Center" Margin="5" Font="Roboto" FontSize="Small"/>
-            <forms1:ChartView x:Name="Chart2" HeightRequest="150"/>
-            <Label Text="pH Value" HorizontalTextAlignment="Center" Margin="5" Font="Roboto" FontSize="Small"/>
-            <forms1:ChartView x:Name="Chart3" HeightRequest="150" />
-            <Label Text="Turbidity" HorizontalTextAlignment="Center" Margin="5" Font="Roboto" FontSize="Small"/>
-            <forms1:ChartView x:Name="Chart4" HeightRequest="150"/>
-        </StackLayout>
-    </ScrollView>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Refresh" Text="Get New Data" Clicked="Refresh_Clicked" Grid.Row="0" Grid.ColumnSpan="2"/>
+
+
+        <Label x:Name="Label1" Text="Temperature" HorizontalTextAlignment="Center" Margin="5" Font="Roboto" FontSize="Small" Grid.Row="1" Grid.Column="0"/>
+        <forms1:ChartView x:Name="Chart1" HeightRequest="150" EnableTouchEvents="True" Touch="Chart1_Touch" Grid.Row="2" Grid.Column="0"/>
+
+
+        <Label x:Name="Label2" Text="Conductivity" HorizontalTextAlignment="Center" Margin="5" Font="Roboto" FontSize="Small" Grid.Row="1" Grid.Column="1"/>
+        <forms1:ChartView x:Name="Chart2" HeightRequest="150" EnableTouchEvents="True" Touch="Chart2_Touch" Grid.Row="2" Grid.Column="1"/>
+        <Label x:Name="Label3" Text="pH Value" HorizontalTextAlignment="Center" Margin="5" Font="Roboto" FontSize="Small" Grid.Row="3" Grid.Column="0"/>
+        <forms1:ChartView x:Name="Chart3" HeightRequest="150" EnableTouchEvents="True" Touch="Chart3_Touch" Grid.Row="4" Grid.Column="0"/>
+        <Label x:Name="Label4" Text="Turbidity" HorizontalTextAlignment="Center" Margin="5" Font="Roboto" FontSize="Small" Grid.Row="3" Grid.Column="1"/>
+        <forms1:ChartView x:Name="Chart4" HeightRequest="150" EnableTouchEvents="True" Touch="Chart4_Touch" Grid.Row="4" Grid.Column="1"/>
+    </Grid>
+
 
 
 

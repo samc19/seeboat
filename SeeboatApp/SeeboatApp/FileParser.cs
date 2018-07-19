@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
-namespace FileReader
+namespace SeeboatApp
 {
     /*This class can take in a string of 11 data points and then return an array of doubles with each point being a single item.
      * There was functionality for reading a file but that has been commented out because I couldn't get the program to find the file.
@@ -21,7 +21,7 @@ namespace FileReader
         {
             string temporaryStringDatum;
             double temporaryDoubleDatum;
-            for (int i = 0; i < DataInArrForm.Length; i++)
+            for (int i = 0; i < DataInArrForm.Length - 1; i++)
             {
                 temporaryStringDatum = dataPacketStandIn.Substring(0, dataPacketStandIn.IndexOf(','));
                 temporaryDoubleDatum = convertStrToDouble(temporaryStringDatum);

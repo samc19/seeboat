@@ -15,3 +15,6 @@ c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\bin\Debug\nets
 c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\SeeboatApp.csproj.CopyComplete
 C:\Users\Administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\SeeboatApp.csprojAssemblyReference.cache
 C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\GraphFocus.xaml.g.cs
+C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\MapPage.xaml.g.cs
+C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp\obj\Debug\netstandard2.0\About.xaml.g.cs
