@@ -88,7 +88,10 @@ namespace SeeboatApp
             System.Diagnostics.Debug.WriteLine("Started pin update");
             foreach (int key in boatIDs)
             {
-                map.Pins.Add(new Pin { Type = PinType.Place, Label = "Boat #" + key, Position = dataPuller.boats[key].GPS });
+                var pin = new Pin { Type = PinType.Generic, Label = "Boat " + key, Position = dataPuller.boats[key].GPS };
+               
+                map.Pins.Add(pin);
+                pin.Clicked += GoToChart;
             }
             
 

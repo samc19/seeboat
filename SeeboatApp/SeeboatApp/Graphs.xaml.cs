@@ -46,6 +46,7 @@ namespace SeeboatApp
         {
             InitializeComponent();
             dataSource = retriever;
+            Title = boatID;
 
             BoatID = int.Parse(boatID.Substring(boatID.IndexOf(" ")+1));
             UpdateSource();

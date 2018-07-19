@@ -6,12 +6,12 @@
              x:Class="SeeboatApp.GraphFocus">
     <StackLayout>
         <Button x:Name="Refresh" Text="Get New Data" Clicked="Refresh_Clicked"/>
-        <Label x:Name="TitleDisplay" Text="" HorizontalTextAlignment="Center" Margin="5" Font="Roboto" FontSize="Large"/>
+        <Label x:Name="TitleDisplay"  HorizontalTextAlignment="Center" Margin="5" Font="Open Sans" FontSize="Large"/>
         <forms1:ChartView x:Name="ChartFocus" HeightRequest="150" />
 
-        <Label x:Name="Max" HorizontalTextAlignment="Start" Font="Roboto" FontSize="18" HorizontalOptions="Start" Margin="5"/>
-        <Label x:Name="Min" HorizontalTextAlignment="Start" Font="Roboto" FontSize="18" Margin="5"/>
-        <Label x:Name="Average" HorizontalTextAlignment="Start" Font="Roboto" FontSize="18" Margin="5"/>
+        <Label x:Name="Max" HorizontalTextAlignment="Start" Font="Open Sans" FontSize="18" HorizontalOptions="Start" Margin="5"/>
+        <Label x:Name="Min" HorizontalTextAlignment="Start" Font="Open Sans" FontSize="18" Margin="5"/>
+        <Label x:Name="Average" HorizontalTextAlignment="Start" Font="Open Sans" FontSize="18" Margin="5"/>
 
     </StackLayout>
 
