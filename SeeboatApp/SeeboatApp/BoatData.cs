@@ -158,7 +158,7 @@ namespace SeeboatApp
             condsStore = new List<Entry>();
             turbsStore = new List<Entry>();
             pHsStore = new List<Entry>();
-            GPS = new Position(42.361598, -71.081279);
+            GPS = new Position(42.361598 + ID/100.0, -71.081279);
             ID = BoatID;
 
         }
@@ -236,6 +236,18 @@ namespace SeeboatApp
                 sum += addends[i].Value;
             }
             return sum;
+        }
+
+
+        public float FindSmallest(IEnumerable<Entry> entries, float maxValue)
+        {
+            float smallest = maxValue;
+            foreach(Entry datum in entries)
+            {
+                if (datum.Value < smallest)
+                    smallest = datum.Value;
+            }
+            return smallest;
         }
 
 

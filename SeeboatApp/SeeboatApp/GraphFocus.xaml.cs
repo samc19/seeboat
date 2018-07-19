@@ -40,6 +40,7 @@ namespace SeeboatApp
             UpdateGraph();
             Average.Text = "Average Value: " + GetAverage().ToString();
             Max.Text = "Maximum Value: " + ChartFocus.Chart.MaxValue.ToString();
+            Min.Text = "Minimum Value: " + source.FindSmallest(ChartFocus.Chart.Entries, ChartFocus.Chart.MaxValue);
         }
 
         private void UpdateGraph()

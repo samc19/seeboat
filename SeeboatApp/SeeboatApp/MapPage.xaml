@@ -6,5 +6,5 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="AboutItem" Activated="UpdatePins"  Order="Secondary"/>
     </ContentPage.ToolbarItems>
-    <Button x:Name="Update" Clicked="UpdatePins"/>
+    
 </ContentPage>

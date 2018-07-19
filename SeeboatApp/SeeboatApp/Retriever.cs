@@ -18,6 +18,7 @@ namespace SeeboatApp
 
             boats = new Dictionary<int, BoatData>();
             boats.Add(1, new BoatData(1));
+            boats.Add(2, new BoatData(2));
             Timer1.Interval = 5000;
             Timer1.Elapsed += Update;
             Timer1.Start();
@@ -28,7 +29,9 @@ namespace SeeboatApp
 
         public void Update(object sender, ElapsedEventArgs e)
         {
-            FileParser reader = new FileParser("26,23.09,45.80,5,34,59,2,67.9,34.7,4.9,45.34");
+            Random rand = new Random();
+            String randomData = "26,23.09,45.80,5,34,59,2,67.9,34.7," + rand.Next(400) +  "," + rand.Next(400);
+            FileParser reader = new FileParser(randomData);
             
             boats[1].AddData(reader.FileToArray());
             System.Diagnostics.Debug.WriteLine("Update started");

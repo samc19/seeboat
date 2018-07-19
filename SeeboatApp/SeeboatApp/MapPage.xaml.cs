@@ -36,21 +36,33 @@ namespace SeeboatApp
 
             MoveToMyLocation();
 
-            //creates pin on map\
-            var pin = new Pin()
+            //creates pin on map
+            foreach (int key in dataPuller.boats.Keys)
             {
-                Type = PinType.Place,
-                Position = dataPuller.boats[1].GPS,
-                Label = "BOAT ID"
+                var pin = new Pin()
+                {
+                    Type = PinType.Place,
+                    //Position = dataPuller.boats[key].GPS,
+                    Position = new Position(42.361598 + (double)key/1000, -71.081279),
+                    Label = "Boat " + key.ToString()
+                };
+                map.Pins.Add(pin);
+                pin.Clicked += GoToChart;
+
+            }
+
+            var button = new Button()
+            {
+                Text = "Update Pins"
             };
-            map.Pins.Add(pin);
-            pin.Clicked += GoToChart;
+            button.Clicked += UpdatePins;
 
-
+            
             //places map onto content page
 
             var stack = new StackLayout { Spacing = 0 };
             stack.Children.Add(map);
+            stack.Children.Add(button);
             Content = stack;
 
             //adds toolbaritems
@@ -74,12 +86,11 @@ namespace SeeboatApp
 
             map.Pins.Clear();
             System.Diagnostics.Debug.WriteLine("Started pin update");
-            for (int i = 0; i < boatIDs.Count; i++)
+            foreach (int key in boatIDs)
             {
-                map.Pins.Add(new Pin { Type = PinType.Place, Label = "Boat #" + boatIDs[i], Position = dataPuller.boats[i].GPS });
-                System.Diagnostics.Debug.WriteLine("Done with" + i);
+                map.Pins.Add(new Pin { Type = PinType.Place, Label = "Boat #" + key, Position = dataPuller.boats[key].GPS });
             }
-            System.Diagnostics.Debug.WriteLine("Finished pin update");
+            
 
         }
 
@@ -93,8 +104,7 @@ namespace SeeboatApp
         //navigates to new page with graphs on them
         async void GoToChart(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Graphs(1, dataPuller));
-
+            await Navigation.PushAsync(new Graphs(((Pin)sender).Label, dataPuller));
         }
 
         private async void AboutItem_Activated(object sender, EventArgs e)

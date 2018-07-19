@@ -10,7 +10,8 @@
         <forms1:ChartView x:Name="ChartFocus" HeightRequest="150" />
 
         <Label x:Name="Max" HorizontalTextAlignment="Start" Font="Roboto" FontSize="18" HorizontalOptions="Start" Margin="5"/>
-        <Label x:Name="Average" HorizontalTextAlignment="End" HorizontalOptions="End" Font="Roboto" FontSize="18" Margin="5"/>
+        <Label x:Name="Min" HorizontalTextAlignment="Start" Font="Roboto" FontSize="18" Margin="5"/>
+        <Label x:Name="Average" HorizontalTextAlignment="Start" Font="Roboto" FontSize="18" Margin="5"/>
 
     </StackLayout>
 

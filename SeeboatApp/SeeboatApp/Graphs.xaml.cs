@@ -31,7 +31,7 @@ namespace SeeboatApp
         private void UpdateSource()
         {
             //dataSource.UpdateTest();
-            source = dataSource.GetData(1);
+            source = dataSource.GetData(BoatID);
 
         }
 
@@ -42,12 +42,12 @@ namespace SeeboatApp
             UpdateGraphs();
         }
 
-        public Graphs(int boatID, Retriever retriever)
+        public Graphs(String boatID, Retriever retriever)
         {
             InitializeComponent();
             dataSource = retriever;
 
-            BoatID = boatID;
+            BoatID = int.Parse(boatID.Substring(boatID.IndexOf(" ")+1));
             UpdateSource();
             UpdateGraphs();
 
