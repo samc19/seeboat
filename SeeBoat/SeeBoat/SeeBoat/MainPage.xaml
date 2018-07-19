@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SeeBoat"
+             x:Class="SeeBoat.MainPage">
+
+    <StackLayout BackgroundColor="#085DAD">
+        <Label x:Name="Title" Text="SeeBoat" TextColor="#8CC739" Font="Lato" FontSize="90" HorizontalOptions="Center" TranslationY="100"/>
+        <Button x:Name="GetMap" Text="Go to Map" Font="Open Sans" TextColor="White" Clicked="GetMap_Clicked" HorizontalOptions="Center" WidthRequest="200" BackgroundColor="#8CC739" TranslationY="300"/>
+    </StackLayout>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="AboutItem" Text="About" Order="Secondary" Clicked="AboutItem_Clicked"/>
+        <ToolbarItem x:Name="MapItem" Text="Map" Order="Secondary" Clicked="MapItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>

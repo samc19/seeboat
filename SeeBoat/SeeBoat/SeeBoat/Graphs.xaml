@@ -1,0 +1,25 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SeeBoat"
+             xmlns:forms="clr-namespace:Microcharts;assembly=Microcharts"
+             xmlns:forms1="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="SeeBoat.Graphs"
+             Title="SeeBoat">
+    <ScrollView>
+        <StackLayout>
+            <Button x:Name="Refresh" Text="Get New Data" Clicked="Refresh_Clicked"/>
+            <Label Text="Temperature" HorizontalTextAlignment="Center" Margin="5" Font="Roboto" FontSize="Small"/>
+            <forms1:ChartView x:Name="Chart1" HeightRequest="150" />
+            <Label x:Name="MaxValue1"  TranslationX="100"  Text=""/>
+            <Label Text="Conductivity" HorizontalTextAlignment="Center" Margin="5" Font="Roboto" FontSize="Small"/>
+            <forms1:ChartView x:Name="Chart2" HeightRequest="150"/>
+            <Label Text="pH Value" HorizontalTextAlignment="Center" Margin="5" Font="Roboto" FontSize="Small"/>
+            <forms1:ChartView x:Name="Chart3" HeightRequest="150" />
+            <Label Text="Turbidity" HorizontalTextAlignment="Center" Margin="5" Font="Roboto" FontSize="Small"/>
+            <forms1:ChartView x:Name="Chart4" HeightRequest="150"/>
+        </StackLayout>
+    </ScrollView>
+
+
+
+</ContentPage>
