@@ -100,7 +100,7 @@ namespace SeeboatApp
         async void MoveToMyLocation()
         {
             var locator = CrossGeolocator.Current;
-            var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(0.001));
+            var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(3));
             map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(position.Latitude, position.Longitude), Distance.FromMiles(0.1)));
         }
 

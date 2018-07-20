@@ -28,7 +28,7 @@
     <AppxPackagedFile Include="C:\Users\Administrator\source\repos\seeboat\SeeboatApp\SeeboatApp.UWP\bin\x86\Debug\SeeboatApp.UWP.exe">
       <PackagePath>entrypoint\SeeboatApp.UWP.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\googleapi\3.6.1\lib\portable-net45+win8+wpa81\GoogleApi.dll">
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\googleapi\3.6.2\lib\portable-net45+win8+wpa81\GoogleApi.dll">
       <PackagePath>GoogleApi.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\microcharts\0.7.1\lib\uap\Microcharts.Uwp.dll">
