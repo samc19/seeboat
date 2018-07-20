@@ -1,1 +1,0 @@
-c:\users\administrator\source\repos\Seeboat\SeeboatApp\SeeboatApp.UWP\SeeboatApp.UWP.csproj;x86
