@@ -30,10 +30,11 @@ namespace SeeboatApp
         public void Update(object sender, ElapsedEventArgs e)
         {
             Random rand = new Random();
+            DateTime time = new DateTime();
             String randomData = "26,23.09,45.80,5,34,59,2,67.9,34.7," + rand.Next(400) +  "," + rand.Next(400);
             FileParser reader = new FileParser(randomData);
-            
-            boats[1].AddData(reader.FileToArray());
+            double[] data = reader.FileToArray();
+            boats[1].AddData(data);
             System.Diagnostics.Debug.WriteLine("Update started");
 
             //Will call BoatData.AddData

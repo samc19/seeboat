@@ -21,13 +21,14 @@ namespace SeeboatApp
         {
             string temporaryStringDatum;
             double temporaryDoubleDatum;
-            for (int i = 0; i < DataInArrForm.Length - 1; i++)
+            for (int i = 0; i < DataInArrForm.Length-1; i++)
             {
                 temporaryStringDatum = dataPacketStandIn.Substring(0, dataPacketStandIn.IndexOf(','));
-                temporaryDoubleDatum = convertStrToDouble(temporaryStringDatum);
+                temporaryDoubleDatum = Double.Parse(temporaryStringDatum);
                 DataInArrForm[i] = temporaryDoubleDatum;
                 dataPacketStandIn = dataPacketStandIn.Substring(dataPacketStandIn.IndexOf(',') + 1);
             }
+            DataInArrForm[10] = Double.Parse(dataPacketStandIn);
             //var content = String.Empty;
             //using (var streamReader = File.OpenText(nameOfFile))
             //{

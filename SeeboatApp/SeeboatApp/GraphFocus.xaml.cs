@@ -37,6 +37,7 @@ namespace SeeboatApp
 
         public void Update()
         {
+            System.Diagnostics.Debug.WriteLine("This is a secret message...");
             UpdateSource();
             UpdateGraph();
             Average.Text = "Average Value: " + GetAverage().ToString();
@@ -109,22 +110,18 @@ namespace SeeboatApp
         public float GetAverage()
         {
             float sum;
-            if (Title.Equals("Temperature"))
+            if (PageTitle.Equals("Temperature"))
                 sum = source.SumTempsStore();
-            else if (Title.Equals("Conductivity"))
+            else if (PageTitle.Equals("Conductivity"))
                 sum = source.SumCondsStore();
-            else if (Title.Equals("Turbidity"))
+            else if (PageTitle.Equals("Turbidity"))
                 sum = source.SumTurbsStore();
-            else if (Title.Equals("pH Value"))
+            else if (PageTitle.Equals("pH Value"))
                 sum = source.SumPHsStore();
             else
                 sum = 0;
             return sum / source.temps.Count;
         }
 
-        private void Refresh_Clicked_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

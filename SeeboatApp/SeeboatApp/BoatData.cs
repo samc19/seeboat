@@ -165,12 +165,12 @@ namespace SeeboatApp
 
         public bool AddData(double[] data)
         {
-            if (data[7] != 0)
+            if (data[8] != 0)
             {
                 String time = ConvertTime(data);
                 Entry[] entries = new Entry[4];
                 int j = 0;
-                for (int i = 6; i < 10; i++)
+                for (int i = 7; i < 11; i++)
                 {
                     entries[j] = MakeEntry(data[i], time);
                     j++;
@@ -185,7 +185,7 @@ namespace SeeboatApp
 
         private String ConvertTime(double[] data)
         {
-            string time = data[3] + data[4] + data[5] + "";
+            string time = data[3] + ":" + data[4] + ":" +  data[5];
             return time;
         }
 
