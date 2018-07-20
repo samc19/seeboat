@@ -128,7 +128,7 @@
     <AndroidResource Include="Resources\drawable\SeeBoatIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Map\SeeBoat.csproj">
+    <ProjectReference Include="..\SeeBoat\SeeBoat.csproj">
       <Project>{ACA4A923-9E5C-43CB-9833-D8F6A2CB0301}</Project>
       <Name>SeeBoat</Name>
     </ProjectReference>

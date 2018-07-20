@@ -1,12 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SeeboatApp.About">
+             x:Class="SeeboatApp.About"
+             Title="SeeBoat">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="#085DAD" Padding="20">
+            <Label x:Name="Title"
+                   Text="About"
+                   TextColor="#8CC739"
+                   Scale="3"
+                   Font="Lato"
+                   TranslationY="50"
+                   HorizontalOptions="Center" />
+            <Label x:Name="Info1"
+                   Text="SeeBoat helps us understand our water..."
+                   TextColor="White"
+                   Font="Open Sans"
+                   TranslationY="125"
+                   HorizontalOptions="Start" />
+            <Label x:Name="Info2"
+                   Text="SeeBoat is a project of the MIT Media Lab and Northeastern University..."
+                   TextColor="White"
+                   Font="Open Sans"
+                   TranslationY="175"
+                   HorizontalOptions="Start" />
+            <Label x:Name="Info3"
+                   Text="The SeeBoat app was made by Robert Henning, Laura Perovich, and Microsoft New England Research and Development Center interns..."
+                   TextColor="White"
+                   Font="Open Sans"
+                   TranslationY="225"
+                   HorizontalOptions="Start" />
+            <Label x:Name="Contact"
+                   Text="Questions? Contact us..."
+                   TextColor="White"
+                   Font="Open Sans"
+                   TranslationY="275"
+                   HorizontalOptions="Start" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -4,9 +4,9 @@
              xmlns:local="clr-namespace:SeeboatApp"
              x:Class="SeeboatApp.MainPage">
 
-    <StackLayout BackgroundColor="DarkBlue">
-        <Label x:Name="Title" Text="See Boat" TextColor="DarkSeaGreen" Font="Trade Gothic" FontSize="90" HorizontalOptions="Center" TranslationY="100"/>
-        <Button x:Name="GetMap" Text="Go to Map" Font="Trade Gothic" TextColor="WhiteSmoke" Clicked="GetMap_Clicked" HorizontalOptions="Center" WidthRequest="200" BackgroundColor="DarkSeaGreen" TranslationY="300"/>
+    <StackLayout BackgroundColor="#085DAD">
+        <Label x:Name="Title" Text="SeeBoat" TextColor="#8CC739" Font="Lato" FontSize="90" HorizontalOptions="Center" TranslationY="100"/>
+        <Button x:Name="GetMap" Text="Go to Map" Font="Open Sans" TextColor="White" Clicked="GetMap_Clicked" HorizontalOptions="Center" WidthRequest="200" BackgroundColor="#8CC739" TranslationY="300"/>
     </StackLayout>
     <ContentPage.ToolbarItems>
         <ToolbarItem x:Name="AboutItem" Text="About" Order="Secondary" Clicked="AboutItem_Clicked"/>

@@ -4,14 +4,14 @@
              xmlns:forms="clr-namespace:Microcharts;assembly=Microcharts"
              xmlns:forms1="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
              x:Class="SeeboatApp.GraphFocus">
-    <StackLayout>
-        <Button x:Name="Refresh" Text="Get New Data" Clicked="Refresh_Clicked"/>
-        <Label x:Name="TitleDisplay"  HorizontalTextAlignment="Center" Margin="5" Font="Open Sans" FontSize="Large"/>
-        <forms1:ChartView x:Name="ChartFocus" HeightRequest="150" />
+    <StackLayout BackgroundColor="White">
 
-        <Label x:Name="Max" HorizontalTextAlignment="Start" Font="Open Sans" FontSize="18" HorizontalOptions="Start" Margin="5"/>
-        <Label x:Name="Min" HorizontalTextAlignment="Start" Font="Open Sans" FontSize="18" Margin="5"/>
-        <Label x:Name="Average" HorizontalTextAlignment="Start" Font="Open Sans" FontSize="18" Margin="5"/>
+        <Label x:Name="TitleDisplay"  HorizontalTextAlignment="Center" Margin="5" Font="Open Sans" FontSize="Large" TextColor="#31C3E7"/>
+        <forms1:ChartView x:Name="ChartFocus" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="250" WidthRequest="300"/>
+        <Label x:Name="Max" HorizontalTextAlignment="Start" Font="Open Sans" FontSize="18" HorizontalOptions="Start" Margin="5" TextColor="#085DAD"/>
+        <Label x:Name="Min" HorizontalTextAlignment="Start" Font="Open Sans" FontSize="18" Margin="5" TextColor="#085DAD"/>
+        <Label x:Name="Average" HorizontalTextAlignment="Start" Font="Open Sans" FontSize="18" Margin="5" TextColor="#085DAD"/>
+        <Button x:Name="Refresh" Text="Get New Data" Font="Open Sans" BackgroundColor="#8CC739" Clicked="Refresh_Clicked" VerticalOptions="End"/>
 
     </StackLayout>
 

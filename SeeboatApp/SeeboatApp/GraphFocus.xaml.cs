@@ -17,13 +17,14 @@ namespace SeeboatApp
         public int ID;
         public Retriever dataSource;
         public BoatData source;
-        public new string Title;
+        public  string PageTitle;
         public GraphFocus(Retriever input, int BoatID, String GraphTitle)
         {
             InitializeComponent();
             dataSource = input;
-            Title = GraphTitle;
+            PageTitle = GraphTitle;
             TitleDisplay.Text = GraphTitle;
+            Title = "Boat " + BoatID;
             ID = BoatID;
             Update();
             //Average.Text = "Average Value: " + GetAverage().ToString();
@@ -45,7 +46,7 @@ namespace SeeboatApp
 
         private void UpdateGraph()
         {
-            if (Title.Equals("Temperature"))
+            if (PageTitle.Equals("Temperature"))
             {
                 ChartFocus.Chart = new LineChart
                 {
@@ -56,7 +57,7 @@ namespace SeeboatApp
                 };
             }
 
-            else if (Title.Equals("Conductivity"))
+            else if (PageTitle.Equals("Conductivity"))
             {
                 ChartFocus.Chart = new LineChart
                 {
@@ -67,7 +68,7 @@ namespace SeeboatApp
                 };
             }
 
-            else if (Title.Equals("Turbidity"))
+            else if (PageTitle.Equals("Turbidity"))
             {
                 ChartFocus.Chart = new LineChart
                 {
@@ -78,7 +79,7 @@ namespace SeeboatApp
                 };
             }
 
-            else if (Title.Equals("pH Value"))
+            else if (PageTitle.Equals("pH Value"))
             {
                 ChartFocus.Chart = new LineChart
                 {
@@ -119,6 +120,11 @@ namespace SeeboatApp
             else
                 sum = 0;
             return sum / source.temps.Count;
+        }
+
+        private void Refresh_Clicked_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

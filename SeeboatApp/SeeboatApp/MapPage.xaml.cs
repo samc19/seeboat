@@ -20,9 +20,8 @@ namespace SeeboatApp
         {
             timer = new Timer();
             dataPuller = new Retriever();
-            timer.Interval = 10000;
-            timer.Elapsed += UpdatePins;
-            timer.Start();
+            Title = "SeeBoat";
+            
             //creates map
             map = new Map(
             MapSpan.FromCenterAndRadius(
@@ -53,7 +52,8 @@ namespace SeeboatApp
 
             var button = new Button()
             {
-                Text = "Update Pins"
+                Text = "Update Pins",
+                BackgroundColor = Color.FromHex("#8CC739")
             };
             button.Clicked += UpdatePins;
 
@@ -73,6 +73,7 @@ namespace SeeboatApp
             };
 
             this.ToolbarItems.Add(AboutItem);
+            AboutItem.Clicked += AboutItem_Activated;
             //map.Pins.Clear();
 
 
@@ -88,7 +89,7 @@ namespace SeeboatApp
             System.Diagnostics.Debug.WriteLine("Started pin update");
             foreach (int key in boatIDs)
             {
-                var pin = new Pin { Type = PinType.Generic, Label = "Boat " + key, Position = dataPuller.boats[key].GPS };
+                var pin = new Pin { Type = PinType.Place, Label = "Boat " + key, Position = dataPuller.boats[key].GPS };
                
                 map.Pins.Add(pin);
                 pin.Clicked += GoToChart;
