@@ -23,6 +23,7 @@ namespace SeeboatApp
             InitializeComponent();
             dataSource = input;
             PageTitle = GraphTitle;
+            TitleDisplay.FontAttributes = FontAttributes.Bold;
             TitleDisplay.Text = GraphTitle;
             Title = "Boat " + BoatID;
             ID = BoatID;

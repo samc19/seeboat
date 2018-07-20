@@ -74,7 +74,6 @@ namespace SeeboatApp
 
             this.ToolbarItems.Add(AboutItem);
             AboutItem.Clicked += AboutItem_Activated;
-            //map.Pins.Clear();
 
 
 
