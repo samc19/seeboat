@@ -12,7 +12,7 @@ namespace SeeboatApp
 		{
 			InitializeComponent();
 
-			MainPage = new NavigationPage(new MainPage());
+			MainPage = new NavigationPage(new MainPage()) { BarBackgroundColor = Color.FromHex("#085DAD"), BarTextColor = Color.White }; ;
 		}
 
 		protected override void OnStart ()

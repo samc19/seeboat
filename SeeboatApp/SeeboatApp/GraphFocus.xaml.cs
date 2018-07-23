@@ -18,25 +18,19 @@ namespace SeeboatApp
         public Retriever dataSource;
         public BoatData source;
         public  string PageTitle;
+        public string units = "";
         public GraphFocus(Retriever input, int BoatID, String GraphTitle)
         {
             InitializeComponent();
             dataSource = input;
             PageTitle = GraphTitle;
             TitleDisplay.FontAttributes = FontAttributes.Bold;
-            TitleDisplay.Text = GraphTitle;
+            ID = BoatID;
+            Update();
+            TitleDisplay.Text = GraphTitle + units;
             Title = "Boat " + BoatID;
             BoatName.Text = "Boat " + BoatID;
             
-            //GlobalMin.Text = dataSource.GetGlobalMin(GraphTitle).ToString();
-            ID = BoatID;
-            Update();
-            //Average.Text = "Average Value: " + GetAverage().ToString();
-            //Max.Text = maxValue;
-
-
-
-
         }
 
         public void Update()
@@ -63,6 +57,7 @@ namespace SeeboatApp
                     LineMode = LineMode.Straight
 
                 };
+                units = " (degrees Farenheit)";
             }
 
             else if (PageTitle.Equals("Conductivity"))
@@ -74,6 +69,7 @@ namespace SeeboatApp
                     LineMode = LineMode.Straight
 
                 };
+                units = " (milliwatts per square meter)";
             }
 
             else if (PageTitle.Equals("Turbidity"))
@@ -85,6 +81,7 @@ namespace SeeboatApp
                     LineMode = LineMode.Straight
 
                 };
+                units = " (FTU)";
             }
 
             else if (PageTitle.Equals("pH"))
@@ -96,6 +93,7 @@ namespace SeeboatApp
                     LineMode = LineMode.Straight
 
                 };
+                units = "";
             }
 
 
