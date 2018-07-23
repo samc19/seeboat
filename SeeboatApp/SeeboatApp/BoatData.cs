@@ -250,6 +250,105 @@ namespace SeeboatApp
             return smallest;
         }
 
+        public float FindLeast(String dataType, float maxValue)
+        {
+            float min = maxValue;
+            if (dataType.Equals("Temperature"))
+            {
+
+                foreach (Entry entry in temps)
+                {
+                    if (entry.Value < min)
+                        min = entry.Value;
+                }
+            }
+            else if (dataType.Equals("Conductivity"))
+            {
+
+                foreach (Entry entry in condsStore)
+                {
+                    if (entry.Value < min)
+                        min = entry.Value;
+                }
+            }
+            else if (dataType.Equals("Turbidity"))
+            {
+
+                foreach (Entry entry in turbsStore)
+                {
+                    if (entry.Value < min)
+                        min = entry.Value;
+                }
+            }
+            else if (dataType.Equals("pH Values"))
+            {
+
+                foreach (Entry entry in pHsStore)
+                {
+                    if (entry.Value < min)
+                        min = entry.Value;
+                }
+            }
+            return min;
+        }
+
+        public float FindLargest(String dataType)
+        {
+            float max = 0;
+            if(dataType.Equals("Temperature"))
+            {
+                
+                foreach (Entry entry in temps)
+                {
+                    if (entry.Value > max)
+                        max = entry.Value;
+                }
+            }
+            else if (dataType.Equals("Conductivity"))
+            {
+               
+                foreach (Entry entry in condsStore)
+                {
+                    if (entry.Value > max)
+                        max = entry.Value;
+                }
+            }
+            else if (dataType.Equals("Turbidity"))
+            {
+                
+                foreach (Entry entry in turbsStore)
+                {
+                    if (entry.Value > max)
+                        max = entry.Value;
+                }
+            }
+            else if (dataType.Equals("pH Values"))
+            {
+                
+                foreach (Entry entry in pHsStore)
+                {
+                    if (entry.Value > max)
+                        max = entry.Value;
+                }
+            }
+            return max;
+        }
+        public float GetAverage(String PageTitle)
+        {
+            float sum;
+            if (PageTitle.Equals("Temperature"))
+                sum = SumTempsStore();
+            else if (PageTitle.Equals("Conductivity"))
+                sum = SumCondsStore();
+            else if (PageTitle.Equals("Turbidity"))
+                sum = SumTurbsStore();
+            else if (PageTitle.Equals("pH Values"))
+                sum = SumPHsStore();
+            else
+                sum = 0;
+            return sum /temps.Count;
+        }
+
 
 
         public float SumTempsStore()

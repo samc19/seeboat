@@ -26,6 +26,9 @@ namespace SeeboatApp
             TitleDisplay.FontAttributes = FontAttributes.Bold;
             TitleDisplay.Text = GraphTitle;
             Title = "Boat " + BoatID;
+            BoatName.Text = "Boat " + BoatID;
+            
+            //GlobalMin.Text = dataSource.GetGlobalMin(GraphTitle).ToString();
             ID = BoatID;
             Update();
             //Average.Text = "Average Value: " + GetAverage().ToString();
@@ -41,9 +44,12 @@ namespace SeeboatApp
             System.Diagnostics.Debug.WriteLine("This is a secret message...");
             UpdateSource();
             UpdateGraph();
-            Average.Text = "Average Value: " + GetAverage().ToString();
-            Max.Text = "Maximum Value: " + ChartFocus.Chart.MaxValue.ToString();
-            Min.Text = "Minimum Value: " + source.FindSmallest(ChartFocus.Chart.Entries, ChartFocus.Chart.MaxValue);
+            Average.Text = source.GetAverage(PageTitle).ToString();
+            Max.Text = ChartFocus.Chart.MaxValue.ToString();
+            Min.Text = source.FindSmallest(ChartFocus.Chart.Entries, ChartFocus.Chart.MaxValue).ToString();
+            GlobalMax.Text = dataSource.GetGlobalMax(PageTitle).ToString();
+            GlobalMin.Text = dataSource.GetGlobalMin(PageTitle, float.Parse(Max.Text)).ToString();
+            GlobalAvg.Text = dataSource.GetGlobalAvg(PageTitle).ToString();
         }
 
         private void UpdateGraph()
@@ -81,7 +87,7 @@ namespace SeeboatApp
                 };
             }
 
-            else if (PageTitle.Equals("pH Value"))
+            else if (PageTitle.Equals("pH Values"))
             {
                 ChartFocus.Chart = new LineChart
                 {
@@ -108,21 +114,48 @@ namespace SeeboatApp
             Update();
         }
 
-        public float GetAverage()
+        private void MoveTurbs_Clicked(object sender, EventArgs e)
         {
-            float sum;
-            if (PageTitle.Equals("Temperature"))
-                sum = source.SumTempsStore();
-            else if (PageTitle.Equals("Conductivity"))
-                sum = source.SumCondsStore();
-            else if (PageTitle.Equals("Turbidity"))
-                sum = source.SumTurbsStore();
-            else if (PageTitle.Equals("pH Value"))
-                sum = source.SumPHsStore();
-            else
-                sum = 0;
-            return sum / source.temps.Count;
+            PageTitle = "Turbidity";
+            TitleDisplay.Text = PageTitle;
+            MoveTurbs.IsEnabled = false;
+            MoveConds.IsEnabled = true;
+            MovePHs.IsEnabled = true;
+            MoveTemps.IsEnabled = true;
+            Update();
         }
 
+        private void MoveConds_Clicked(object sender, EventArgs e)
+        {
+            PageTitle = "Conductivity";
+            TitleDisplay.Text = PageTitle;
+            MoveTurbs.IsEnabled = true;
+            MoveConds.IsEnabled = false;
+            MovePHs.IsEnabled = true;
+            MoveTemps.IsEnabled = true;
+            Update();
+        }
+
+        private void MovePHs_Clicked(object sender, EventArgs e)
+        {
+            PageTitle = "pH Values";
+            TitleDisplay.Text = PageTitle;
+            MoveTurbs.IsEnabled = true;
+            MoveConds.IsEnabled = true;
+            MovePHs.IsEnabled = false;
+            MoveTemps.IsEnabled = true;
+            Update();
+        }
+
+        private void MoveTemps_Clicked(object sender, EventArgs e)
+        {
+            PageTitle = "Temperature";
+            TitleDisplay.Text = PageTitle;
+            MoveTurbs.IsEnabled = true;
+            MoveConds.IsEnabled = true;
+            MovePHs.IsEnabled = true;
+            MoveTemps.IsEnabled = false;
+            Update();
+        }
     }
 }

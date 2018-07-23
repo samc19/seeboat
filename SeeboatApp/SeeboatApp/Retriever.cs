@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microcharts;
+using System;
 using System.Collections.Generic;
 using System.Timers;
 
@@ -10,6 +11,7 @@ namespace SeeboatApp
 
         Timer Timer1 = new Timer();
         public Dictionary<int, BoatData> boats { get; }
+        public List<int> IDs;
 
 
 
@@ -17,8 +19,11 @@ namespace SeeboatApp
         {
 
             boats = new Dictionary<int, BoatData>();
+            IDs = new List<int>();
             boats.Add(1, new BoatData(1));
+            IDs.Add(1);
             boats.Add(2, new BoatData(2));
+            IDs.Add(2);
             Timer1.Interval = 5000;
             Timer1.Elapsed += Update;
             Timer1.Start();
@@ -31,7 +36,7 @@ namespace SeeboatApp
         {
             Random rand = new Random();
             DateTime time = new DateTime();
-            String randomData = "26,23.09,45.80,5,34,59,2,67.9,34.7," + rand.Next(400) +  "," + rand.Next(400);
+            String randomData = "26,23.09,45.80,5,34,59,2,67.9,34.7," + rand.Next(400) + "," + rand.Next(400);
             FileParser reader = new FileParser(randomData);
             double[] data = reader.FileToArray();
             boats[1].AddData(data);
@@ -52,15 +57,40 @@ namespace SeeboatApp
             return boats[boatID];
         }
 
-        public List<int> getIDs()
+        
+
+        public float GetGlobalMax(String dataType)
         {
-            /*List<int> IDs = new List<int>();
-            for(int i=0; i<boats.Count; i++)
+            float max = 0;
+
+            foreach (int key in IDs)
             {
-                IDs.Add(boats[i].ID);
+                if (boats[key].FindLargest(dataType) > max)
+                    max = boats[key].FindLargest(dataType);
             }
-            return IDs;*/
-            return new List<int> { 1 };
+            return max;
+        }
+
+        public float GetGlobalMin(String dataType, float maxValue)
+        {
+            float min = maxValue;
+
+            foreach (int key in IDs)
+            {
+                if (boats[key].FindLargest(dataType) > min)
+                    min = boats[key].FindLeast(dataType, maxValue);
+            }
+            return min;
+        }
+
+        public float GetGlobalAvg(String dataType)
+        {
+            float avg = 0;
+            foreach (int key in IDs)
+            {
+                avg += boats[key].GetAverage(dataType);
+            }
+            return avg / IDs.Count;
         }
     }
 }

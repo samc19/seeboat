@@ -82,7 +82,7 @@ namespace SeeboatApp
         public void UpdatePins(object sender, EventArgs e)
         {
 
-            List<int> boatIDs = dataPuller.getIDs();
+            List<int> boatIDs = dataPuller.IDs;
 
             map.Pins.Clear();
             System.Diagnostics.Debug.WriteLine("Started pin update");

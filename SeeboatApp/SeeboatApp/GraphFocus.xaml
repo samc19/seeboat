@@ -7,12 +7,53 @@
 
     <StackLayout BackgroundColor="White">
 
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="MoveTurbs" Text="Turbidity" Clicked="MoveTurbs_Clicked" Grid.Row="0" Grid.Column="0"/>
+            <Button x:Name="MoveConds" Text="Conductivity" Clicked="MoveConds_Clicked" Grid.Row="0" Grid.Column="1"/>
+            <Button x:Name="MovePHs" Text="pH Values" Clicked="MovePHs_Clicked" Grid.Row="0" Grid.Column="2"/>
+            <Button x:Name="MoveTemps" Text="Temperature" Clicked="MoveTemps_Clicked" Grid.Row="0" Grid.Column="3"/>
 
-        <Label x:Name="TitleDisplay"  HorizontalTextAlignment="Center" Margin="5" Font="Open Sans" FontSize="Large" TextColor="#31C3E7"/>
-        <forms1:ChartView x:Name="ChartFocus" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="250" WidthRequest="300"/>
-        <Label x:Name="Max" HorizontalTextAlignment="Start" Font="Open Sans" FontSize="18" HorizontalOptions="Start" Margin="5" TextColor="#085DAD"/>
-        <Label x:Name="Min" HorizontalTextAlignment="Start" Font="Open Sans" FontSize="18" Margin="5" TextColor="#085DAD"/>
-        <Label x:Name="Average" HorizontalTextAlignment="Start" Font="Open Sans" FontSize="18" Margin="5" TextColor="#085DAD"/>
+        </Grid>
+        
+        
+        <forms1:ChartView x:Name="ChartFocus" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="200" WidthRequest="300"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Label x:Name="TitleDisplay" Font="Open Sans" FontSize="24"  TextColor="#085DAD" Grid.Row="0" Grid.ColumnSpan="2"/>
+            <Label x:Name="BoatName" Font="Open Sans" FontSize="18" Margin="5" TextColor="#085DAD" Grid.Row="1" Grid.Column="1"/>
+            <Label Text="All Boats" Font="Open Sans" FontSize="18" Margin="5" TextColor="#085DAD" Grid.Row="1" Grid.Column="2"/>
+            <Label Text="Maximum Value" Font="Open Sans" FontSize="18" Margin="5" TextColor="#085DAD" Grid.Row="2" Grid.Column="0"/>
+            <Label x:Name="Max" Font="Open Sans" FontSize="18" Margin="5" TextColor="#085DAD" Grid.Row="2" Grid.Column="1"/>
+            <Label x:Name="GlobalMax" Font="Open Sans" FontSize="18" Margin="5" TextColor="#085DAD" Grid.Row="2" Grid.Column="2"/>
+            <Label Text="Minimum Value" Font="Open Sans" FontSize="18" Margin="5" TextColor="#085DAD" Grid.Row="3" Grid.Column="0"/>
+            <Label x:Name="Min" Font="Open Sans" FontSize="18" Margin="5" TextColor="#085DAD" Grid.Row="3" Grid.Column="1"/>
+            <Label x:Name="GlobalMin" Font="Open Sans" FontSize="18" Margin="5" TextColor="#085DAD" Grid.Row="3" Grid.Column="2"/>
+            <Label Text="Average Value" Font="Open Sans" FontSize="18" Margin="5" TextColor="#085DAD" Grid.Row="4" Grid.Column="0"/>
+            <Label x:Name="Average" Font="Open Sans" FontSize="18" Margin="5" TextColor="#085DAD" Grid.Row="4" Grid.Column="1"/>
+            <Label x:Name="GlobalAvg" Font="Open Sans" FontSize="18" Margin="5" TextColor="#085DAD" Grid.Row="4" Grid.Column="2"/>
+        </Grid>
+        
         <Button x:Name="Refresh" Text="Get New Data" FontAttributes="Bold" Font="Open Sans" BackgroundColor="#8CC739" Clicked="Refresh_Clicked" VerticalOptions="End"/>
 
     </StackLayout>
