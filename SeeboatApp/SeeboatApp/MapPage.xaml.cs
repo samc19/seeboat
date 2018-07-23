@@ -7,7 +7,10 @@ using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 using Plugin.Geolocator;
 using System.Timers;
-
+using System.Threading.Tasks;
+using Android.OS;
+using Android;
+using Android.Content.PM;
 
 namespace SeeboatApp
 {
