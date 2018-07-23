@@ -14,19 +14,19 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="MoveTurbs" Text="Turbidity" Clicked="MoveTurbs_Clicked" Grid.Row="0" Grid.Column="0"/>
-            <Button x:Name="MoveConds" Text="Conductivity" Clicked="MoveConds_Clicked" Grid.Row="0" Grid.Column="1"/>
-            <Button x:Name="MovePHs" Text="pH Values" Clicked="MovePHs_Clicked" Grid.Row="0" Grid.Column="2"/>
-            <Button x:Name="MoveTemps" Text="Temperature" Clicked="MoveTemps_Clicked" Grid.Row="0" Grid.Column="3"/>
+            <Button x:Name="MoveTurbs" Text="Turb" Clicked="MoveTurbs_Clicked" Grid.Row="0" Grid.Column="0"/>
+            <Button x:Name="MoveConds" Text="Cond" Clicked="MoveConds_Clicked" Grid.Row="0" Grid.Column="1"/>
+            <Button x:Name="MovePHs" Text="pH" Clicked="MovePHs_Clicked" Grid.Row="0" Grid.Column="2"/>
+            <Button x:Name="MoveTemps" Text="Temp" Clicked="MoveTemps_Clicked" Grid.Row="0" Grid.Column="3"/>
 
         </Grid>
         
         
-        <forms1:ChartView x:Name="ChartFocus" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="200" WidthRequest="300"/>
+        <forms1:ChartView x:Name="ChartFocus" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="175" WidthRequest="300"/>
 
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="30"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>

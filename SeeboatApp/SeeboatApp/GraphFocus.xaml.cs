@@ -87,7 +87,7 @@ namespace SeeboatApp
                 };
             }
 
-            else if (PageTitle.Equals("pH Values"))
+            else if (PageTitle.Equals("pH"))
             {
                 ChartFocus.Chart = new LineChart
                 {
@@ -138,7 +138,7 @@ namespace SeeboatApp
 
         private void MovePHs_Clicked(object sender, EventArgs e)
         {
-            PageTitle = "pH Values";
+            PageTitle = "pH";
             TitleDisplay.Text = PageTitle;
             MoveTurbs.IsEnabled = true;
             MoveConds.IsEnabled = true;

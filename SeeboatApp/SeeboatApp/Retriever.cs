@@ -40,6 +40,7 @@ namespace SeeboatApp
             FileParser reader = new FileParser(randomData);
             double[] data = reader.FileToArray();
             boats[1].AddData(data);
+            boats[2].AddData(data);
             System.Diagnostics.Debug.WriteLine("Update started");
 
             //Will call BoatData.AddData
@@ -77,7 +78,7 @@ namespace SeeboatApp
 
             foreach (int key in IDs)
             {
-                if (boats[key].FindLargest(dataType) > min)
+                if (boats[key].FindLeast(dataType, maxValue) < min)
                     min = boats[key].FindLeast(dataType, maxValue);
             }
             return min;

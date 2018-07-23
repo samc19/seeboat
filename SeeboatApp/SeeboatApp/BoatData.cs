@@ -256,7 +256,7 @@ namespace SeeboatApp
             if (dataType.Equals("Temperature"))
             {
 
-                foreach (Entry entry in temps)
+                foreach (Entry entry in tempsStore)
                 {
                     if (entry.Value < min)
                         min = entry.Value;
@@ -280,7 +280,7 @@ namespace SeeboatApp
                         min = entry.Value;
                 }
             }
-            else if (dataType.Equals("pH Values"))
+            else if (dataType.Equals("pH"))
             {
 
                 foreach (Entry entry in pHsStore)
@@ -322,7 +322,7 @@ namespace SeeboatApp
                         max = entry.Value;
                 }
             }
-            else if (dataType.Equals("pH Values"))
+            else if (dataType.Equals("pH"))
             {
                 
                 foreach (Entry entry in pHsStore)
@@ -342,7 +342,7 @@ namespace SeeboatApp
                 sum = SumCondsStore();
             else if (PageTitle.Equals("Turbidity"))
                 sum = SumTurbsStore();
-            else if (PageTitle.Equals("pH Values"))
+            else if (PageTitle.Equals("pH"))
                 sum = SumPHsStore();
             else
                 sum = 0;
