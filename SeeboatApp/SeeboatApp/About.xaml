@@ -6,36 +6,57 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="#085DAD" Padding="20">
             <Label x:Name="Title"
+                   Margin="20"
                    Text="About"
                    TextColor="#8CC739"
-                   Scale="3"
+                   Scale="2"
                    Font="Lato"
-                   TranslationY="50"
-                   HorizontalOptions="Center" />
+                   HorizontalOptions="Center"/>
             <Label x:Name="Info1"
-                   Text="SeeBoat helps us understand our water..."
+                   Text="SeeBoat is a waterbody monitoring and data display platform that helps communities understand the water quality in local rivers, lakes, and streams."
                    TextColor="White"
                    Font="Open Sans"
-                   TranslationY="125"
+                   
                    HorizontalOptions="Start" />
             <Label x:Name="Info2"
-                   Text="SeeBoat is a project of the MIT Media Lab and Northeastern University..."
+                   Text="SeeBoat measures four water quality markers (pH, turbidity, conductivity, and temperature) and displays the data on site and in real time by changing the color of the lights on the boat. This allows communities to see &quot;hot spots&quot; in the water and identify potential pollution sources nearby. Community members can see the complete sensor data by using the SeeBoat app."
                    TextColor="White"
                    Font="Open Sans"
-                   TranslationY="175"
+                  
                    HorizontalOptions="Start" />
             <Label x:Name="Info3"
-                   Text="The SeeBoat app was made by Robert Henning, Laura Perovich, and Microsoft New England Research and Development Center interns..."
+                   Text="SeeBoat is a project of the MIT Media Lab in collaboration with Northeastern University and GreenRoots."
                    TextColor="White"
                    Font="Open Sans"
-                   TranslationY="225"
+                   
+                   HorizontalOptions="Start" />
+            <Label x:Name="Info4"
+                   Text="The SeeBoat app was made by the Microsoft TEALs interns: Talia Spitz, Kenneth Moody, Tien Chung, and Sam Costa supported by Microsoft employee mentors: Juhi Paralkar, Josef Sokolovsky, Michael Cummings, and Stefan Rajkovic with the MIT Media Lab researcher, Laura Perovich, in the Microsoft Garage. Previous versions were created by Robert Henning at MIT."
+                   TextColor="White"
+                   Font="Open Sans"
+                   
+                   HorizontalOptions="Start" />
+            <Label x:Name="Info5"
+                   Text="SeeBoat is an open source project licensed under GPLv2 and Creative Commons. See more at our website and our github."
+                   TextColor="White"
+                   Font="Open Sans"
+                   
                    HorizontalOptions="Start" />
             <Label x:Name="Contact"
-                   Text="Questions? Contact us..."
+                   Text="Questions? Contact Laura Perovich at perovich@media.mit.edu."
                    TextColor="White"
                    Font="Open Sans"
-                   TranslationY="275"
+                   
                    HorizontalOptions="Start" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="GitHub" BackgroundColor="#085DAD" Text="Go to Github" TextColor="White" Font="Open Sans" Style="Underlined" Clicked="GitHub_Clicked" Grid.Row="0" Grid.Column="1"/>
+                <Button x:Name="LauraWebsite" BackgroundColor="#085DAD" Text="Go to Website" TextColor="White" Font="Open Sans" Style="Underlined" Clicked="LauraWebsite_Clicked" Grid.Row="0" Grid.Column="0"/>
+            </Grid>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
