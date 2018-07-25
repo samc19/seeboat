@@ -12,7 +12,7 @@ using Android.Support.V4.App;
 
 namespace SeeboatApp.Droid
 {
-    [Activity(Label = "SeeboatApp", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "SeeboatApp", Icon = "@drawable/SeeBoatIcon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity, ActivityCompat.IOnRequestPermissionsResultCallback
     {
         string[] PermissionsLocation =
