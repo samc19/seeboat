@@ -14,10 +14,13 @@ namespace SeeboatApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GraphFocus : ContentPage
     {
+        
         public int ID;
         public Retriever dataSource;
         public BoatData source;
         public  string PageTitle;
+        double width;
+        double height;
         public string units = "";
         public GraphFocus(Retriever input, int BoatID, String GraphTitle)
         {
@@ -30,6 +33,11 @@ namespace SeeboatApp
             TitleDisplay.Text = GraphTitle + units;
             Title = "Boat " + BoatID;
             BoatName.Text = "Boat " + BoatID;
+            width = Width;
+            height = Height;
+            ChartFocus.HeightRequest = App.ScreenHeight / 3;
+            ChartFocus.WidthRequest = App.ScreenWidth / 1.1;
+
             
         }
 

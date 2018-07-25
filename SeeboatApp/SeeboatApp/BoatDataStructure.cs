@@ -16,18 +16,23 @@ namespace SeeboatApp
             this.RowKey = temprowkey;
         }
 
-        public double DeviceID { get; set; }
+        public BoatDataStructure()
+        {
 
-        public double GPSlat { get; set; }
-        public double GPSlong { get; set; }
-        public double GPShour { get; set; }
-        public double GPSmin { get; set; }
-        public double GPSsec { get; set; }
-        public double GPSms { get; set; }
-        public double TempVal { get; set; }
-        public double CondVal { get; set; }
-        public double PhVal { get; set; }
-        public double MilliIrradiance { get; set; }
+        }
+        //These variables used to be doubles but Kenneth made them strings
+        public string DeviceID { get; set; }
+
+        public string GPSlat { get; set; }
+        public string GPSlong { get; set; }
+        public string GPShour { get; set; }
+        public string GPSmin { get; set; }
+        public string GPSsec { get; set; }
+        public string GPSms { get; set; }
+        public string TempVal { get; set; }
+        public string CondVal { get; set; }
+        public string PhVal { get; set; }
+        public string MilliIrradiance { get; set; }
     }
 
 }

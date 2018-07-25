@@ -20,15 +20,13 @@
         <Button x:Name="Refresh" Text="Get New Data" Clicked="Refresh_Clicked" Grid.Row="4" Grid.ColumnSpan="2" BackgroundColor="#8CC739"/>
 
         <Label x:Name="Label1" Text="Temperature" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="5" Font="OpenSans" FontSize="Small" Grid.Row="0" Grid.Column="0" TextColor="#31C3E7"/>
-        <forms1:ChartView x:Name="Chart1" HeightRequest="150" EnableTouchEvents="True" Touch="Chart1_Touch" Grid.Row="1" Grid.Column="0"/>
-
-
+        <forms1:ChartView x:Name="Chart1"  EnableTouchEvents="True" Touch="Chart1_Touch" Grid.Row="1" Grid.Column="0"/>
         <Label x:Name="Label2" Text="Conductivity" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="5" Font="Open Sans" FontSize="Small" Grid.Row="0" Grid.Column="1" TextColor="#31C3E7"/>
-        <forms1:ChartView x:Name="Chart2" HeightRequest="150" EnableTouchEvents="True" Touch="Chart2_Touch" Grid.Row="1" Grid.Column="1"/>
+        <forms1:ChartView x:Name="Chart2" EnableTouchEvents="True" Touch="Chart2_Touch" Grid.Row="1" Grid.Column="1"/>
         <Label x:Name="Label3" Text="pH" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="5" Font="Open Sans" FontSize="Small" Grid.Row="2" Grid.Column="0" TextColor="#31C3E7"/>
-        <forms1:ChartView x:Name="Chart3" HeightRequest="150" EnableTouchEvents="True" Touch="Chart3_Touch" Grid.Row="3" Grid.Column="0"/>
+        <forms1:ChartView x:Name="Chart3" EnableTouchEvents="True" Touch="Chart3_Touch" Grid.Row="3" Grid.Column="0"/>
         <Label x:Name="Label4" Text="Turbidity" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="5" Font="Open Sans" FontSize="Small" Grid.Row="2" Grid.Column="1" TextColor="#31C3E7"/>
-        <forms1:ChartView x:Name="Chart4" HeightRequest="150" EnableTouchEvents="True" Touch="Chart4_Touch" Grid.Row="3" Grid.Column="1"/>
+        <forms1:ChartView x:Name="Chart4" EnableTouchEvents="True" Touch="Chart4_Touch" Grid.Row="3" Grid.Column="1"/>
     </Grid>
 
 

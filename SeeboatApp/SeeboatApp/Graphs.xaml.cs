@@ -47,6 +47,15 @@ namespace SeeboatApp
             InitializeComponent();
             dataSource = retriever;
             Title = boatID;
+            Chart1.HeightRequest = App.ScreenHeight / 3;
+            Chart1.WidthRequest = App.ScreenWidth / 2.2;
+            Chart2.HeightRequest = App.ScreenHeight / 3;
+            Chart2.WidthRequest = App.ScreenWidth / 2.2;
+            Chart3.HeightRequest = App.ScreenHeight / 3;
+            Chart3.WidthRequest = App.ScreenWidth / 2.2;
+            Chart4.HeightRequest = App.ScreenHeight / 3;
+            Chart4.WidthRequest = App.ScreenWidth / 2.2;
+
 
             BoatID = int.Parse(boatID.Substring(boatID.IndexOf(" ")+1));
             UpdateSource();

@@ -224,7 +224,7 @@ int transMode = 0;
 
 //Variable to indicate what board number this is
 //This will be different for each SeeBoat!!!!!! It lets us know who the message is coming from 
-const int deviceID = 444;
+const int deviceID = 123;
 
 //pH Variables
 char ph_data[20];                //we make a 20 byte character array to hold incoming data from the pH circuit.

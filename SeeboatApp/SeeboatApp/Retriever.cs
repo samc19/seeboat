@@ -12,6 +12,8 @@ namespace SeeboatApp
         Timer Timer1 = new Timer();
         public Dictionary<int, BoatData> boats { get; }
         public List<int> IDs;
+        //CloudPull puller;
+        //int numBoats;
 
 
 
@@ -27,6 +29,17 @@ namespace SeeboatApp
             Timer1.Interval = 5000;
             Timer1.Elapsed += Update;
             Timer1.Start();
+            //puller = new CloudPull();
+            //numBoats = 1;
+            //while (puller.PullFromCloud(numBoats.ToString()))
+            //{
+              //  numBoats++;
+            //}
+            //for(int i=0; i< 100; i++)
+            //{
+             //   System.Diagnostics.Debug.Write("*****");
+            //}
+            //System.Diagnostics.Debug.WriteLine(numBoats);
 
 
 
@@ -36,11 +49,14 @@ namespace SeeboatApp
         {
             Random rand = new Random();
             DateTime time = new DateTime();
-            String randomData = "26,23.09,45.80,5,34,59,2,67.9,34.7," + rand.Next(400) + "," + rand.Next(400);
+            String randomData = "26,42.359252,-71.081048,5,34,59,2," + rand.Next(400) + "," + rand.Next(400) + "," + rand.Next(400) + "," + rand.Next(400);
+            String randomData2 = "26,42.357349,-71.077718,5,34,59,2," + rand.Next(400) + "," + rand.Next(400) + "," + rand.Next(400) + "," + rand.Next(400);
             FileParser reader = new FileParser(randomData);
+            FileParser reader2 = new FileParser(randomData2);
             double[] data = reader.FileToArray();
+            double[] data2 = reader2.FileToArray();
             boats[1].AddData(data);
-            boats[2].AddData(data);
+            boats[2].AddData(data2);
             System.Diagnostics.Debug.WriteLine("Update started");
 
             //Will call BoatData.AddData

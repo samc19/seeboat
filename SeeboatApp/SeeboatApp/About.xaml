@@ -4,7 +4,8 @@
              x:Class="SeeboatApp.About"
              Title="SeeBoat">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#085DAD" Padding="20">
+        <ScrollView>
+            <StackLayout BackgroundColor="#085DAD" Padding="20">
             <Label x:Name="Title"
                    Margin="20"
                    Text="About"
@@ -58,5 +59,6 @@
             </Grid>
 
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
