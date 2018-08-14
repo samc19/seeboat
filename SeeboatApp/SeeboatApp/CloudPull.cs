@@ -10,7 +10,7 @@ namespace SeeboatApp
     class CloudPull
     {
         //Do not change these 3 lines unless it is just changing the names of the objects. These lines are the connection to the cloud
-        readonly static CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=tealseeboateeststorage;AccountKey=F5GnHieen8Az50v0oR9cIkf7AywiF1O9vQI53TyNy4GqnpbFmzOrM1ztQ+NWf8ph/GfnQyrXe9usjY/tJBHIRA==;EndpointSuffix=core.windows.net");
+        readonly static CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=tealseeboateeststorage;AccountKey=<insertKeyHere>;EndpointSuffix=core.windows.net");
         readonly static CloudTableClient tableClient = cloudStorageAccount.CreateCloudTableClient();
         CloudTable dummyDataTable;
 
